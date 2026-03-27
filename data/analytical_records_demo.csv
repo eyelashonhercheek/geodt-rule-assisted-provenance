@@ -1,0 +1,5 @@
+record_id,sample_id,analysis_type,identifier,source_info,lithology,stratigraphy,result_summary
+AR001,SP001,thin_section,TS-A50,REG-A,fine sandstone,Lower Member,Quartz-rich with moderate feldspar and minor lithic fragments
+AR002,SP001,xrf,XRF-A50,REG-A,fine sandstone,Lower Member,SiO2 dominant with moderate Al and K
+AR003,SP002,thin_section,TS-A49,REG-A,silty mudstone,Lower Member,Fine matrix-supported texture with clay-rich components
+AR004,SP003,xrf,XRF-B12,REG-B,limestone,Upper Member,CaO dominant with low siliciclastic input
