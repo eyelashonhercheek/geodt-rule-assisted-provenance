@@ -16,16 +16,16 @@ def apply_constraint_with_fallback(
             "fallback_reason": "constraint_retained_candidates",
         }
 
-    if evidence_quality == "weak" and previous_candidates:
-        return previous_candidates, {
-            "fallback_applied": True,
-            "fallback_reason": "weak_evidence_should_not_clear_candidates",
-        }
-
     if conflict:
         return set(), {
             "fallback_applied": False,
             "fallback_reason": "high_confidence_conflict",
+        }
+
+    if evidence_quality == "weak" and previous_candidates:
+        return previous_candidates, {
+            "fallback_applied": True,
+            "fallback_reason": "weak_evidence_should_not_clear_candidates",
         }
 
     return filtered_candidates, {

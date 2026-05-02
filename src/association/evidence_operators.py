@@ -63,11 +63,9 @@ def candidates_by_source(record: Record, baseline_samples: List[Sample]) -> Tupl
 
     candidates = set()
     for sample in baseline_samples:
-        if outcrop_norm:
-            source_match = outcrop_norm == _value(sample, "outcrop_norm")
-        else:
-            source_match = bool(section_norm and section_norm == _value(sample, "section_norm"))
-        if source_match:
+        outcrop_match = bool(outcrop_norm and outcrop_norm == _value(sample, "outcrop_norm"))
+        section_match = bool(section_norm and section_norm == _value(sample, "section_norm"))
+        if outcrop_match or section_match:
             candidates.add(sample["baseline_id"])
 
     return candidates, {
