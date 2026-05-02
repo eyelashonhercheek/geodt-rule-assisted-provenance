@@ -41,18 +41,18 @@ def generate_outcrop_uid(outcrop: Dict[str, str]) -> str:
     return generate_uid(
         level="outcrop",
         reg=outcrop["region_tag"],
-        age=outcrop["stratigraphy"],
+        age=outcrop["strat_unit_norm"],
         seq=outcrop["outcrop_id"],
-        sub=outcrop["lithology"].split()[-1],
+        sub=outcrop["lithology_norm"].split("_")[-1],
     )
 
 
 def generate_sample_uid(sample: Dict[str, str]) -> str:
     return generate_uid(
         level="sample",
-        reg=sample["source_info"],
-        age=sample["stratigraphy"],
-        seq=sample["sample_id"],
+        reg=sample["outcrop_norm"],
+        age=sample["strat_unit_norm"],
+        seq=sample["baseline_id"],
         sub="handspecimen",
     )
 
@@ -60,8 +60,8 @@ def generate_sample_uid(sample: Dict[str, str]) -> str:
 def generate_record_uid(record: Dict[str, str]) -> str:
     return generate_uid(
         level="record",
-        reg=record["source_info"],
-        age=record["stratigraphy"],
+        reg=record.get("outcrop_norm") or record.get("section_norm") or "unknown_source",
+        age=record.get("strat_unit_norm") or "unknown_stratigraphy",
         seq=record["record_id"],
         sub=record["analysis_type"],
     )

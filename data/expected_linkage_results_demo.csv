@@ -1,0 +1,8 @@
+record_id,expected_status,expected_candidates,expected_failure_reason
+AR001,rule-supported link,BS001,
+AR002,strong candidate,BS002,
+AR003,candidate set,BS002|BS003|BS004,
+AR004,candidate set,BS002|BS003|BS004,
+AR005,unresolved,,outside_baseline
+AR006,unresolved,,missing_source_and_stratigraphy
+AR007,unresolved,,missing_source

@@ -1,0 +1,6 @@
+baseline_id,sample_id_raw,sample_id_norm,outcrop_id,outcrop_norm,section_norm,strat_unit_norm,lithology_norm
+BS001,SP-001,sp001,OC001,northern_ridge_a,section_1,lower_member,fine_sandstone
+BS002,A-49,sp002,OC002,northern_ridge_b,section_1,lower_member,silty_mudstone
+BS003,A-49B,sp003,OC002,northern_ridge_b,section_1,lower_member,shale
+BS004,A-49C,sp004,OC002,northern_ridge_b,section_1,lower_member,limestone
+BS005,B-12,sp005,OC003,south_gully_c,section_3,upper_member,limestone

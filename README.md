@@ -1,30 +1,31 @@
 # Paper Demo Repository
 
-This repository is a minimal, open-source companion demo for a paper on a provenance-aware framework for cross-scale geological data organization and rule-assisted association.
+This repository provides a minimal, auditable reference implementation of the provenance recovery workflow described in the paper.
 
-It reproduces the core method flow only:
+It demonstrates how fragmented analytical records are reassociated with a baseline sample space through evidence operators, conservative fallback, hierarchical status assignment, and provenance queries over recovered association-layer outputs.
 
-- provenance-aware framework
-- cross-scale geological data organization
-- UID generation and parsing
-- rule-assisted association
-- bidirectional provenance
-- forward query / backward provenance restoration
-- a minimal runnable demonstration
+The demo is not a machine-learning model, not a weighted prediction model, and not a simplified copy of the production Vue/Cesium system. It only preserves the method-relevant workflow used in the paper.
 
-This is not the full production system.
+## Workflow
 
-- The original project contains a larger visualization-oriented implementation.
-- The full system architecture, full UI, full database services, and full datasets are not included here.
-- Sensitive configuration, private data, and heavyweight deployment dependencies are intentionally excluded.
+```text
+analytical record
+-> evidence operators
+-> candidate baseline samples
+-> conservative fallback
+-> hierarchical status assignment
+-> association-layer output
+-> forward/backward provenance tracing
+```
 
 ## What Is Included
 
-- small anonymous CSV demo datasets
-- pure Python logic for UID generation and parsing
-- rule-assisted candidate matching between outcrops and samples
-- forward provenance query: `outcrop -> sample -> analytical_record`
-- backward provenance restoration: `analytical_record -> sample -> outcrop`
+- Small anonymous CSV demo datasets.
+- UID generation and parsing for outcrop, baseline sample, and analytical record objects.
+- Evidence operators for analytical-record-to-baseline-sample recovery.
+- Conservative fallback and hierarchical status assignment.
+- Forward and backward provenance queries over recovered association-layer outputs.
+- Expected-result validation for the demo records.
 
 ## Repository Structure
 
@@ -33,18 +34,21 @@ paper_demo_repo/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
-├── .gitignore
 ├── data/
 │   ├── outcrops_demo.csv
-│   ├── samples_demo.csv
+│   ├── baseline_samples_demo.csv
 │   ├── analytical_records_demo.csv
+│   ├── expected_linkage_results_demo.csv
 │   └── README.md
 ├── src/
 │   ├── uid/
 │   │   ├── uid_generator.py
 │   │   └── uid_parser.py
 │   ├── association/
-│   │   ├── rules.py
+│   │   ├── evidence_operators.py
+│   │   ├── fallback.py
+│   │   ├── status.py
+│   │   ├── recovery.py
 │   │   ├── matcher.py
 │   │   └── examples.py
 │   ├── provenance/
@@ -54,114 +58,94 @@ paper_demo_repo/
 │       └── io_utils.py
 └── examples/
     ├── run_uid_demo.py
+    ├── run_recovery_demo.py
     ├── run_association_demo.py
-    └── run_provenance_demo.py
+    ├── run_provenance_demo.py
+    └── validate_expected_results.py
 ```
 
-## Relationship To The Original Project
-
-This demo was distilled from a larger Cesium/Vue geological corridor project. The demo logic was derived from the following kinds of original code:
-
-- GeoJSON feature property usage for object identification
-- multi-entity relation querying between outcrops, samples, and records
-- relation-table style association modeling
-- forward and backward detail retrieval patterns
-
-The code here is rewritten as a minimal, standalone Python demo rather than copied as a UI system.
+`run_association_demo.py` is retained only as a backward-compatible entry point and calls the recovery workflow internally. The recommended method demo is `run_recovery_demo.py`.
 
 ## Quick Start
 
-Use Python 3.10+.
+Use Python 3.10+. No external dependencies are required.
 
 ```bash
 python examples/run_uid_demo.py
-python examples/run_association_demo.py
+python examples/run_recovery_demo.py
 python examples/run_provenance_demo.py
+python examples/validate_expected_results.py
 ```
 
-## Expected Output
+## Data Model
 
-The example scripts are intentionally small and should produce readable outputs aligned with the methodological steps in the paper.
+- `outcrops_demo.csv`: outcrop-level provenance anchors.
+- `baseline_samples_demo.csv`: the baseline sample space, used as the reference sample space for recovery.
+- `analytical_records_demo.csv`: fragmented target records whose provenance needs to be recovered.
+- `expected_linkage_results_demo.csv`: expected status, candidates, and failure reason for validation.
 
-### `run_uid_demo.py`
+Analytical measurement values are not used as matching evidence in this demo.
 
-This script prints example UIDs for an outcrop, a sample, and an analytical record, then parses them back into component fields.
+## Association Module
 
-Expected pattern:
+The association module is the method core:
+
+- `F_id`: candidate generation from `sample_id_norm`.
+- `F_src`: candidate generation from `outcrop_norm` or `section_norm`.
+- `F_strat`: candidate generation or constraint from `strat_unit_norm`.
+- `F_lith`: weak lithology support over retained candidates.
+
+Evidence operators return candidate sets and evidence logs. They do not make numeric predictions.
+
+## Conservative Fallback
+
+When weak evidence would remove every retained candidate, the workflow keeps the previous candidate set and records:
 
 ```text
-OUTCROP-REG_A-LOWER_MEMBER-OC001-SANDSTONE
-SAMPLE-REG_A-LOWER_MEMBER-SP001-HANDSPECIMEN
-RECORD-REG_A-LOWER_MEMBER-AR001-XRF
+weak_evidence_should_not_clear_candidates
 ```
 
-### `run_association_demo.py`
+This preserves auditable candidates for manual review.
 
-This script prints a ranked candidate list for one sample and shows why each candidate is retained, downgraded, or unresolved.
+## Status Assignment
 
-Expected pattern:
+The final recovery status is assigned from retained candidates and evidence conditions:
 
-- one top-ranked outcrop with high-certainty and supporting evidence
-- one weaker candidate retained by auxiliary evidence
-- one unresolved candidate with insufficient combined evidence
+- `rule-supported link`: one candidate retained by high-confidence identifier evidence with no conflict.
+- `strong candidate`: one unique candidate that requires manual confirmation before being used as a definitive link.
+- `candidate set`: multiple auditable candidates remain.
+- `unresolved`: no reliable candidate is formed under the current baseline sample space or available fields.
 
-### `run_provenance_demo.py`
+Unresolved records include a `failure_reason`: `outside_baseline`, `missing_source`, `missing_source_and_stratigraphy`, or `no_reliable_candidate`.
 
-This script prints:
+## Provenance Queries
 
-- a forward query chain from one outcrop to its linked samples and analytical records
-- a backward provenance restoration chain from one analytical record back to its parent sample and outcrop
+Forward query:
 
-## Method Summary
+```text
+outcrop -> recovered baseline samples -> analytical records linked by recovery results
+```
 
-### 1. Cross-scale geological data organization
+Backward trace:
 
-Three object levels are represented:
+```text
+analytical record -> recovered candidate sample(s) -> outcrop
+```
 
-- outcrop
-- sample
-- analytical record
+A `candidate set` returns multiple possible traces. An `unresolved` record returns its status and failure reason without forcing a provenance chain.
 
-### 2. UID mechanism
+## Expected Demo Cases
 
-The demo UID follows the paper-oriented pattern:
-
-`<Level>-<Reg>-<Age>-<Seq>[-<Sub>]`
-
-Field meanings:
-
-- `Level`: object level such as `OUTCROP`, `SAMPLE`, or `RECORD`
-- `Reg`: regional or source grouping tag used for cross-scale organization
-- `Age`: stratigraphic age or related geological temporal grouping label used in the demo
-- `Seq`: local sequence identifier
-- `Sub`: optional subtype such as lithology class or analysis type
-
-### 3. Rule-assisted association
-
-Association is intentionally interpretable and organized into layers:
-
-- high-certainty evidence
-- auxiliary evidence
-- candidate narrowing
-- unresolved cases
-
-The current demo rules operate over:
-
-- identifier evidence
-- source information
-- stratigraphy
-- lithology
-
-The matcher returns both a score and human-readable evidence.
-The demo is intentionally interpretable and does not rely on black-box model inference.
-
-### 4. Bidirectional provenance
-
-- Forward query starts from an outcrop and retrieves connected samples and analytical records.
-- Backward provenance restoration starts from an analytical record and restores the parent sample and outcrop chain.
+- `AR001`: `rule-supported link`
+- `AR002`: `strong candidate`
+- `AR003`: `candidate set`
+- `AR004`: conservative fallback case
+- `AR005`: `unresolved` / `outside_baseline`
+- `AR006`: `unresolved` / `missing_source_and_stratigraphy`
+- `AR007`: `unresolved` / `missing_source`
 
 ## Notes
 
 - The demo data are anonymized and simplified.
-- Coordinates, names, and identifiers are illustrative rather than production values.
-- No database connection, API key, token, or private media asset is included.
+- Coordinates, names, and identifiers are illustrative.
+- No database connection, API key, token, private dataset, or UI dependency is included.

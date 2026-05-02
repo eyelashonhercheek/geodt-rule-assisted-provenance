@@ -18,7 +18,7 @@ from src.utils.io_utils import load_csv
 
 def main() -> None:
     outcrop = load_csv("outcrops_demo.csv")[0]
-    sample = load_csv("samples_demo.csv")[0]
+    sample = load_csv("baseline_samples_demo.csv")[0]
     record = load_csv("analytical_records_demo.csv")[0]
 
     items = [

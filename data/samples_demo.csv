@@ -1,4 +1,0 @@
-sample_id,outcrop_id,field_name,identifier,source_info,section,stratigraphy,lithology
-SP001,OC001,Field Sample A50,A50,REG-A,Section-1,Lower Member,fine sandstone
-SP002,OC002,Field Sample A49,A49,REG-A,Section-1,Lower Member,silty mudstone
-SP003,OC003,Field Sample B12,B12,REG-B,Section-3,Upper Member,limestone

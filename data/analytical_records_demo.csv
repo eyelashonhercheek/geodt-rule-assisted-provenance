@@ -1,5 +1,8 @@
-record_id,sample_id,analysis_type,identifier,source_info,lithology,stratigraphy,result_summary
-AR001,SP001,thin_section,TS-A50,REG-A,fine sandstone,Lower Member,Quartz-rich with moderate feldspar and minor lithic fragments
-AR002,SP001,xrf,XRF-A50,REG-A,fine sandstone,Lower Member,SiO2 dominant with moderate Al and K
-AR003,SP002,thin_section,TS-A49,REG-A,silty mudstone,Lower Member,Fine matrix-supported texture with clay-rich components
-AR004,SP003,xrf,XRF-B12,REG-B,limestone,Upper Member,CaO dominant with low siliciclastic input
+record_id,source_type,sample_id_raw,sample_id_norm,outcrop_norm,section_norm,strat_unit_norm,lithology_norm,analysis_type,result_summary
+AR001,thin_section,SP-001,sp001,northern_ridge_a,section_1,lower_member,fine_sandstone,thin_section,Quartz-rich sandstone with feldspar and minor lithic fragments
+AR002,xrf,A49,,northern_ridge_b,section_1,lower_member,silty_mudstone,xrf,SiO2 and Al2O3 dominated mudstone-compatible composition
+AR003,laser,,,northern_ridge_b,section_1,lower_member,,laser,Contextual source and stratigraphy preserved but identifier absent
+AR004,hyperspectral,,,northern_ridge_b,section_1,lower_member,basalt,hyperspectral,Lithology term conflicts with the retained contextual candidate set
+AR005,grain_size,C5-01,,western_margin,section_9,chang_5_member,fine_sandstone,grain_size,Record belongs to a stratigraphic or regional context outside this demo baseline
+AR006,xrf,,,,,,,xrf,Insufficient source and stratigraphic fields for reliable provenance recovery
+AR007,thin_section,HT-03,,,,hutubi_member,limestone,thin_section,Source information is missing and stratigraphy is outside the current baseline

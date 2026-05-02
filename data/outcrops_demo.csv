@@ -1,4 +1,4 @@
-outcrop_id,outcrop_name,region_tag,location,section,stratigraphy,lithology,latitude,longitude
-OC001,Northern Ridge A,REG-A,Basin-X / Northern Ridge,Section-1,Lower Member,fine sandstone,30.1000,109.2000
-OC002,Northern Ridge B,REG-A,Basin-X / Northern Ridge,Section-1,Lower Member,silty mudstone,30.1050,109.2150
-OC003,South Gully C,REG-B,Basin-Y / South Gully,Section-3,Upper Member,limestone,29.8800,109.5200
+outcrop_id,outcrop_name,region_tag,outcrop_norm,location,section_norm,strat_unit_norm,lithology_norm,latitude,longitude
+OC001,Northern Ridge A,REG-A,northern_ridge_a,Basin-X / Northern Ridge,section_1,lower_member,fine_sandstone,31.2345,111.3456
+OC002,Northern Ridge B,REG-A,northern_ridge_b,Basin-X / Northern Ridge,section_1,lower_member,silty_mudstone,31.2468,111.4567
+OC003,South Gully C,REG-B,south_gully_c,Basin-Y / South Gully,section_3,upper_member,limestone,29.8765,111.5678
