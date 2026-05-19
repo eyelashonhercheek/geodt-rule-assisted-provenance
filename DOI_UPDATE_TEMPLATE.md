@@ -1,10 +1,9 @@
 # DOI Update Template
 
-After Zenodo mints the DOI, replace `[INSERT ZENODO DOI HERE]` in the
-manuscript and cover letter with the DOI URL, for example:
+Zenodo DOI:
 
 ```text
-https://doi.org/10.5281/zenodo.xxxxxxx
+https://doi.org/10.5281/zenodo.20279191
 ```
 
 ## Manuscript Code and Data Availability
@@ -19,7 +18,7 @@ https://github.com/eyelashonhercheek/geodt-rule-assisted-provenance
 The archived release is available at:
 
 ```text
-[INSERT ZENODO DOI HERE]
+https://doi.org/10.5281/zenodo.20279191
 ```
 
 The repository is released under the MIT License and provides minimal demo

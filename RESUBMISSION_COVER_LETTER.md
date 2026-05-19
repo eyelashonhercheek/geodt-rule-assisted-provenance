@@ -11,7 +11,7 @@ provide a public reproducibility package containing the full released tabular
 dataset, normalization rules, field inventory, regenerated linkage outputs, and
 validation code. The package is archived with a DOI:
 
-[INSERT ZENODO DOI HERE]
+https://doi.org/10.5281/zenodo.20279191
 
 The corresponding GitHub repository is:
 
