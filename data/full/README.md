@@ -37,11 +37,14 @@ The validator checks that:
 Expected status counts:
 
 ```text
-verified: 440
-strong_candidate: 123
-candidate_level: 378
+rule-supported link: 440
+strong candidate: 123
+candidate set: 378
 unresolved: 459
 ```
+
+The workbook stores the equivalent machine-oriented labels as `verified`,
+`strong_candidate`, `candidate_level`, and `unresolved`.
 
 ## Release Note
 

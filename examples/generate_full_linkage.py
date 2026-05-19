@@ -54,6 +54,13 @@ OUTPUT_COLUMNS = [
     "notes",
 ]
 
+STATUS_LABELS = {
+    "verified": "rule-supported link",
+    "strong_candidate": "strong candidate",
+    "candidate_level": "candidate set",
+    "unresolved": "unresolved",
+}
+
 
 def load_table(file_name: str, sheet_name: str | None = None, header: str | None = None):
     rows = load_xlsx_rows(FULL_DATA_DIR / file_name, sheet_name=sheet_name)
@@ -308,13 +315,13 @@ def main() -> None:
             print(f"- {failure}")
         print("Generated status counts:")
         for status in ("verified", "strong_candidate", "candidate_level", "unresolved"):
-            print(f"{status}: {status_counts[status]}")
+            print(f"{STATUS_LABELS[status]}: {status_counts[status]}")
         raise SystemExit(1)
 
     print("Full linkage generation matched the released workbook.")
     print(f"Generated linkage rows: {len(generated)}")
     for status in ("verified", "strong_candidate", "candidate_level", "unresolved"):
-        print(f"{status}: {status_counts[status]}")
+        print(f"{STATUS_LABELS[status]}: {status_counts[status]}")
 
 
 if __name__ == "__main__":

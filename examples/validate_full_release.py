@@ -9,7 +9,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from src.utils.xlsx_utils import find_header_row, load_xlsx_rows, rows_to_dicts
-from examples.generate_full_linkage import generate_rows
+from examples.generate_full_linkage import STATUS_LABELS, generate_rows
 
 
 FULL_DATA_DIR = ROOT / "data" / "full"
@@ -256,7 +256,7 @@ def main() -> None:
     print(f"Baseline samples released: {baseline_total}")
     print(f"Linkage result rows: {len(linkage_rows)}")
     for status in STATUS_ORDER:
-        print(f"{status}: {status_counts[status]}")
+        print(f"{STATUS_LABELS[status]}: {status_counts[status]}")
 
 
 if __name__ == "__main__":

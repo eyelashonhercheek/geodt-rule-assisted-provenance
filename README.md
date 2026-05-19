@@ -1,6 +1,6 @@
 # Auditable Cross-Scale Provenance Recovery Demo
 
-[![DOI](https://zenodo.org/badge/1193250155.svg)](https://doi.org/10.5281/zenodo.20279191)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20279192.svg)](https://doi.org/10.5281/zenodo.20279192)
 
 This repository provides a reproducible reference implementation and release
 package for the provenance recovery workflow described in the manuscript:
@@ -40,9 +40,9 @@ Full-release validation passed.
 Input analytical records: 1400
 Baseline samples released: 100
 Linkage result rows: 1400
-verified: 440
-strong_candidate: 123
-candidate_level: 378
+rule-supported link: 440
+strong candidate: 123
+candidate set: 378
 unresolved: 459
 ```
 
@@ -125,6 +125,12 @@ manuscript-level results:
   candidate distribution, and candidate compression summaries are recomputed
   from `linkage_results` and compared against the published summary sheets.
 
+The released workbook stores machine-oriented status labels
+(`verified`, `strong_candidate`, `candidate_level`, `unresolved`). The validation
+scripts print the manuscript-facing labels (`rule-supported link`, `strong
+candidate`, `candidate set`, `unresolved`) so the command-line output matches the
+paper tables.
+
 The full-release workbook states that the regenerated deterministic run should
 replace earlier draft counts if the manuscript adopts this release.
 
@@ -133,4 +139,4 @@ replace earlier draft counts if the manuscript adopts this release.
 The code is released under the MIT License. The released tabular data are
 intended for public archival release with a CC BY 4.0-compatible data license.
 Please cite the archived release DOI rather than only the GitHub repository:
-https://doi.org/10.5281/zenodo.20279191
+https://doi.org/10.5281/zenodo.20279192
