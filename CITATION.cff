@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the archived release DOI."
+title: "Reproducibility package for an auditable cross-scale provenance recovery framework for fragmented geological records"
+version: 1.0.0
+date-released: 2026-05-19
+repository-code: "https://github.com/eyelashonhercheek/geodt-rule-assisted-provenance"
+license: MIT
+type: software
+authors:
+  - family-names: Han
+    given-names: Yaling
+    affiliation: "School of Geosciences, Yangtze University"
+  - family-names: Shao
+    given-names: Yanlin
+    affiliation: "School of Geosciences, Yangtze University"
+  - family-names: Zhou
+    given-names: Jianwei
+    affiliation: "School of Geosciences, Yangtze University"
+  - family-names: Luo
+    given-names: Yuanmeng
+    affiliation: "School of Geosciences, Yangtze University"
+  - family-names: Wang
+    given-names: He
+    affiliation: "School of Geosciences, Yangtze University"
+keywords:
+  - geological records
+  - provenance recovery
+  - record linkage
+  - candidate generation
+  - reproducibility
+  - geoscientific data governance
