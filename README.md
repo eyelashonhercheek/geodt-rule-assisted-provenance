@@ -1,6 +1,6 @@
 # Auditable Cross-Scale Provenance Recovery Demo
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20279192.svg)](https://doi.org/10.5281/zenodo.20279192)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20281183.svg)](https://doi.org/10.5281/zenodo.20281183)
 
 This repository provides a reproducible reference implementation and release
 package for the provenance recovery workflow described in the manuscript:
@@ -139,4 +139,4 @@ replace earlier draft counts if the manuscript adopts this release.
 The code is released under the MIT License. The released tabular data are
 intended for public archival release with a CC BY 4.0-compatible data license.
 Please cite the archived release DOI rather than only the GitHub repository:
-https://doi.org/10.5281/zenodo.20279192
+https://doi.org/10.5281/zenodo.20281183
