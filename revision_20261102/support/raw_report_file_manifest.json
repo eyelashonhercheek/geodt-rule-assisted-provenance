@@ -1,0 +1,32 @@
+[
+  {
+    "filename": "原始报告/1.柱样物性测试.pdf",
+    "sha256": "7d598cea9ad0a87cd179f99211448932246d18203c186f6a46f382cd1d808f6c",
+    "bytes": 153928
+  },
+  {
+    "filename": "原始报告/3.高光谱矿物分析报告.pdf",
+    "sha256": "9338604955b53d522335420a4de5cf161f7baf5c16f4d0677760ed0870035575",
+    "bytes": 7580924
+  },
+  {
+    "filename": "原始报告/4.XRF测试报告.pdf",
+    "sha256": "937318e8c02892772f7fca9ef8a0791defc423df48762f34a648c3f109fb94fb",
+    "bytes": 3514733
+  },
+  {
+    "filename": "原始报告/5.激光测试与分析.pdf",
+    "sha256": "6387ad7a13565ea04489c9803928ba846037bc5f605f38e02d6cb21ac8f83f2d",
+    "bytes": 20450070
+  },
+  {
+    "filename": "原始报告/岩石薄片分析-200_compressed.pdf",
+    "sha256": "abbc024aecbf9156281c24248137524c6f38b988afeadbf3702535e886d2423e",
+    "bytes": 14557806
+  },
+  {
+    "filename": "原始报告/岩石粒度分析-200.pdf",
+    "sha256": "e2af252743df335598c85138324ae91cb2c7b06dd3e1e46a883e0c0473ac3831",
+    "bytes": 7893379
+  }
+]

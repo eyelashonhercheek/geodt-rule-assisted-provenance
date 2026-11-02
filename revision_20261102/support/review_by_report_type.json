@@ -1,0 +1,71 @@
+{
+  "totals": {
+    "reviewed_records": 89,
+    "supported_targets": 71,
+    "insufficient_evidence": 18,
+    "accepted_link_census": 52,
+    "accepted_targets_supported": 52,
+    "supported_targets_in_final_candidates": 69,
+    "stratified_random_records": 30,
+    "diagnostic_records": 7
+  },
+  "report_types": [
+    {
+      "report_type": "Hyperspectral",
+      "reviewed_records": 7,
+      "supported_targets": 3,
+      "insufficient_evidence": 4,
+      "accepted_link_census": 0,
+      "accepted_targets_supported": 0,
+      "supported_targets_in_final_candidates": 3,
+      "stratified_random_records": 6,
+      "diagnostic_records": 1
+    },
+    {
+      "report_type": "XRF",
+      "reviewed_records": 7,
+      "supported_targets": 4,
+      "insufficient_evidence": 3,
+      "accepted_link_census": 0,
+      "accepted_targets_supported": 0,
+      "supported_targets_in_final_candidates": 4,
+      "stratified_random_records": 6,
+      "diagnostic_records": 1
+    },
+    {
+      "report_type": "Laser",
+      "reviewed_records": 13,
+      "supported_targets": 9,
+      "insufficient_evidence": 4,
+      "accepted_link_census": 3,
+      "accepted_targets_supported": 3,
+      "supported_targets_in_final_candidates": 9,
+      "stratified_random_records": 6,
+      "diagnostic_records": 4
+    },
+    {
+      "report_type": "Thin-section",
+      "reviewed_records": 11,
+      "supported_targets": 7,
+      "insufficient_evidence": 4,
+      "accepted_link_census": 5,
+      "accepted_targets_supported": 5,
+      "supported_targets_in_final_candidates": 7,
+      "stratified_random_records": 6,
+      "diagnostic_records": 0
+    },
+    {
+      "report_type": "Grain-size",
+      "reviewed_records": 51,
+      "supported_targets": 48,
+      "insufficient_evidence": 3,
+      "accepted_link_census": 44,
+      "accepted_targets_supported": 44,
+      "supported_targets_in_final_candidates": 46,
+      "stratified_random_records": 6,
+      "diagnostic_records": 1
+    }
+  ],
+  "scope": "Existing single-reviewer judgments; no new review decisions",
+  "zero_accept_types": "No accepted-link precision denominator for hyperspectral or XRF in this run"
+}

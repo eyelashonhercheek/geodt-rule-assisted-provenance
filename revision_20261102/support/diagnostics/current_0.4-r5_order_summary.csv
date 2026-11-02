@@ -1,0 +1,7 @@
+﻿order,n,changed_queries,candidate_edges
+source>layer>lithology,1400,0,7031
+source>lithology>layer,1400,0,7031
+layer>source>lithology,1400,0,7031
+layer>lithology>source,1400,0,7031
+lithology>source>layer,1400,0,7031
+lithology>layer>source,1400,0,7031

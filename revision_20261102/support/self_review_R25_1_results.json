@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "frozen_queries": 1400,
+  "states": {
+    "unresolved": 578,
+    "strong_candidate": 396,
+    "candidate_set": 374,
+    "rule_supported_link": 52
+  },
+  "retained": 822,
+  "candidate_edges": 7031,
+  "native_accepts": 52,
+  "retrieval_coverage": 0.5871428571428572,
+  "acceptance_coverage": 0.037142857142857144,
+  "figure3_cases": [
+    {
+      "task_id": "EX048",
+      "record_key": "laser:3",
+      "target": "BS001",
+      "state": "strong_candidate",
+      "pdf_physical_page": "14",
+      "directory_referenced_report_page": "1",
+      "within_page_block": "2"
+    },
+    {
+      "task_id": "EX049",
+      "record_key": "hyperspectral:3",
+      "target": "BS001",
+      "state": "strong_candidate",
+      "pdf_physical_page": "10",
+      "directory_referenced_report_page": "1",
+      "within_page_block": "2"
+    },
+    {
+      "task_id": "EX021",
+      "record_key": "xrf:14",
+      "target": "BS001",
+      "state": "strong_candidate",
+      "pdf_physical_page": "16",
+      "directory_referenced_report_page": "7",
+      "within_page_block": "1"
+    },
+    {
+      "task_id": "EX028",
+      "record_key": "laser:26",
+      "target": "BS010",
+      "state": "strong_candidate",
+      "pdf_physical_page": "26",
+      "directory_referenced_report_page": "13",
+      "within_page_block": "1"
+    },
+    {
+      "task_id": "EX084",
+      "record_key": "laser:81",
+      "target": "BS049",
+      "state": "strong_candidate",
+      "pdf_physical_page": "53",
+      "directory_referenced_report_page": "40",
+      "within_page_block": "2"
+    }
+  ],
+  "blocking_changed_queries": 37,
+  "blocking_changed_query_named_sources": 37,
+  "blocking_entry_after": {
+    "candidate_entry_source_and_layer": 35,
+    "candidate_entry_source": 2
+  },
+  "blocking_changed_families": {
+    "laser": 14,
+    "thin_section": 11,
+    "grain_size": 12
+  },
+  "new_native_accepts_under_blocking": 0,
+  "stored_string_example": {
+    "record": "LAS002",
+    "stored": "长82-1",
+    "detail": "长 82-1",
+    "baseline": "长 82-1"
+  },
+  "expert_judgments_changed": 0,
+  "recovery_engine_changed": false
+}

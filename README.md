@@ -1,4 +1,58 @@
-# Auditable Cross-Scale Provenance Recovery Demo
+# Auditable Cross-Scale Provenance Recovery
+
+## Major revision evaluation: package v1.1.0, 2 November 2026
+
+The revised evaluation is in [`revision_20261102/`](revision_20261102/).
+It includes the registered D3 inputs, fixed engine 0.4-r5, twelve configurations,
+16,800 prediction rows, 429 documentary development relationships, 89 anonymized
+human source-page review records, six original source reports and file hashes.
+
+The D3 full workflow yields **52 / 396 / 374 / 578** records in its four states,
+with 822 nonempty outputs and 7,031 candidate edges. All 52 current accepted
+associations are supported in the reviewed census (laser 3, thin-section 5,
+grain-size 44). Hyperspectral and XRF records enter the other-state and diagnostic
+review checks. Across the 71 supported review targets, 69 remain in the final
+candidates; eighteen other reviewed records remain unconfirmed. Review scope,
+selection arms and code-dependent interpretations are retained in the ledger.
+
+These results use a different policy from the historical 440 / 123 / 378 / 459
+release preserved below. Candidate relationships, documentary interpretations
+and finer physical-sample allocations retain their stated evidence scopes.
+
+### Quick check for the revised manuscript
+
+Python 3.10 or later is sufficient for these standard-library checks:
+
+```bash
+cd revision_20261102
+python -B support/reproducibility/test_r5.py
+python -B support/reproducibility/reproduce_review_sampling.py
+python -B support/reproducibility/reproduce_review89.py
+python -B support/reproducibility/analyze_R25_pairs.py
+python -B support/reproducibility/audit_R25_1.py
+python -B support/reproducibility/summarize_review_by_type.py --output-dir review_type_summary
+```
+
+See the [versioned README](revision_20261102/README.md) for full replay commands,
+optional PDF replay dependencies and expected outputs. Run commands that regenerate
+tables on a working copy. The input and review tables remain registered read-only
+evidence. All original report locators distinguish physical pages from report pages.
+
+### Historical direct-link replay
+
+The supplementary historical replay recovers the original format-only ID/source
+rule and reproduces 261 direct links: 94 laser, 80 thin-section and 87 grain-size.
+It is separate from the revised acceptance policy and from the later 543-query
+identifier-candidate scenario. The historical 50-case roster is retained with its
+recorded provenance; the revised human validation uses the completed 89-case review.
+
+### Archived historical version
+
+The DOI below identifies the historical v1.0.2 archive. The revised files must be
+archived as a new Zenodo version before that new version DOI is used in a citation.
+The existing DOI remains available for reproduction of the earlier release.
+
+## Historical demonstration and tabular release
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20281183.svg)](https://doi.org/10.5281/zenodo.20281183)
 

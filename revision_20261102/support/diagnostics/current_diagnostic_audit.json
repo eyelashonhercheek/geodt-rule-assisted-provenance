@@ -1,0 +1,50 @@
+{
+  "engine_version": "0.4-r5",
+  "queries": 1400,
+  "default_replay_matches_current_engine": true,
+  "orders": [
+    {
+      "order": "source>layer>lithology",
+      "n": 1400,
+      "changed_queries": 0,
+      "candidate_edges": 7031
+    },
+    {
+      "order": "source>lithology>layer",
+      "n": 1400,
+      "changed_queries": 0,
+      "candidate_edges": 7031
+    },
+    {
+      "order": "layer>source>lithology",
+      "n": 1400,
+      "changed_queries": 0,
+      "candidate_edges": 7031
+    },
+    {
+      "order": "layer>lithology>source",
+      "n": 1400,
+      "changed_queries": 0,
+      "candidate_edges": 7031
+    },
+    {
+      "order": "lithology>source>layer",
+      "n": 1400,
+      "changed_queries": 0,
+      "candidate_edges": 7031
+    },
+    {
+      "order": "lithology>layer>source",
+      "n": 1400,
+      "changed_queries": 0,
+      "candidate_edges": 7031
+    }
+  ],
+  "blocking": {
+    "pool_checks_before": 140000,
+    "pool_checks_after": 102095,
+    "candidate_set_changed": 37,
+    "state_changed": 37
+  },
+  "scope": "Candidate-filter permutations with entry and documentary hold fixed; exact named-source early blocking with empty-block fallback; development diagnostic, not independent accuracy validation. D3 inputs; original sources and R19 are not modified."
+}

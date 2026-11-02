@@ -1,7 +1,7 @@
 {
   "title": "Reproducibility package for an auditable cross-scale provenance recovery framework for fragmented geological records",
   "upload_type": "software",
-  "description": "This release provides the reproducibility package for the manuscript 'An Auditable Cross-Scale Provenance Recovery Framework for Fragmented Geological Records'. It includes a minimal method demo, the full released tabular dataset, normalization rules, field inventory, regenerated linkage outputs, and validation scripts that regenerate the 1400-row linkage table and verify the reported summary statistics.",
+  "description": "Reproducibility package for the major revision of 'An Auditable Cross-Scale Provenance Recovery Framework for Fragmented Geological Records'. The revision_20261102 directory supplies registered D3 inputs, engine 0.4-r5, twelve-configuration predictions, a 429-relationship documentary development reference, an anonymized 89-record single-reviewer source-document assessment, paired comparisons, six source reports and SHA-256 manifests. The 52 accepted associations comprise laser 3, thin-section 5 and grain-size 44; hyperspectral and XRF are assessed in other-state and diagnostic checks. The package also retains the original demonstration/tabular release and a replay of the historical 261-link rule, with their versions and evidence scopes distinguished. Computational reproducibility and relationship validation are documented separately.",
   "creators": [
     {
       "name": "Han, Yaling",
@@ -35,12 +35,12 @@
     "geoscientific data governance"
   ],
   "language": "eng",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "related_identifiers": [
     {
       "identifier": "https://github.com/eyelashonhercheek/geodt-rule-assisted-provenance",
-      "relation": "isSupplementTo",
-      "resource_type": "publication-article"
+      "relation": "isIdenticalTo",
+      "resource_type": "software"
     }
   ]
 }

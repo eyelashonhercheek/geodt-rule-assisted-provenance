@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "input_hashes": {
+    "inputs_D3.json": "82c9d62b874345e69f9612824d61c4d46bd5f118adbc484045c0a47acfb2b63e",
+    "predictions_D3_16800.csv": "2bb14f6556c650a13964c95f59c0198330ea1c51634db7dc2e487537223d1bfe",
+    "reference_429.csv": "27675b5aa1f256c17692d978c7b17bd2680bfb6e500c9d1990c5e1f896dffa46",
+    "Table_S1_human_review89_source_evidence.csv": "141dd5734460b367b429647ce8d6c3b708901066750679fbe1bdae3e1f22440f",
+    "r5_engine.py": "a4b1cf532842f66df9ee51854247738db4246876fcddb1c24ac9391a9a50adf9",
+    "common.py": "d3f3833c3187ba34a21193db6c24faf26d6fac24727bf0b95cd033cc8e133ffe"
+  },
+  "replayed_full_and_strict_queries": 1400,
+  "paired_summary": [
+    {
+      "scope": "documentary429",
+      "n": 429,
+      "both": 383,
+      "full_only": 13,
+      "strict_only": 33,
+      "neither": 0
+    },
+    {
+      "scope": "human_reviewed_positive71",
+      "n": 71,
+      "both": 68,
+      "full_only": 1,
+      "strict_only": 2,
+      "neither": 0
+    }
+  ],
+  "documentary_full_only_mechanisms": {
+    "weak_lithology_fallback": 11,
+    "unresolved_stratigraphic_comparability": 2
+  },
+  "new_reference_labels": 0,
+  "expert_judgments_changed": 0,
+  "engine_changed": false,
+  "input_changed": false
+}

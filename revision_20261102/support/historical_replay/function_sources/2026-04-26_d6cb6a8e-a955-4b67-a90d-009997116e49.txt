@@ -1,0 +1,137 @@
+from artifact_tool import Workbook, SpreadsheetFile
+from artifact_tool import Blob
+from collections import Counter, defaultdict
+# Compute summaries
+source_order=['hyperspectral','xrf','laser','thin','grain']
+source_names={
+'hyperspectral':'高光谱矿物分析报告',
+'xrf':'XRF测试报告',
+'laser':'激光测试与分析报告',
+'thin':'岩石薄片分析报告',
+'grain':'岩石粒度分析报告'
+}
+statuses=['verified','strong_candidate','candidate_level','unresolved']
+
+# Summary status
+total=len(linkage3)
+status_counts=Counter(r['final_status'] for r in linkage3)
+summary_rows=[["status","count","percent","interpretation"]]
+interpret={
+"verified":"唯一候选且由高置信样号/来源链支持，可写入已验证联通",
+"strong_candidate":"唯一候选但仍需人工确认，不自动等同 verified",
+"candidate_level":"候选范围已收缩但仍存在多个候选",
+"unresolved":"当前 baseline 覆盖或字段条件下无法形成可靠候选"
+}
+for st in statuses:
+    c=status_counts[st]
+    summary_rows.append([st,c,round(c/total*100,2),interpret[st]])
+summary_rows.append(["retained_at_least_one_candidate", sum(status_counts[s] for s in ["verified","strong_candidate","candidate_level"]), round(sum(status_counts[s] for s in ["verified","strong_candidate","candidate_level"])/total*100,2), "final_candidate_count > 0"])
+summary_rows.append(["unique_or_verified", status_counts["verified"]+status_counts["strong_candidate"], round((status_counts["verified"]+status_counts["strong_candidate"])/total*100,2), "verified + strong_candidate"])
+
+# By report
+by_report_rows=[["source_type","total"]+statuses]
+for key in source_order:
+    rows=[r for r in linkage3 if r['source_key']==key]
+    ctr=Counter(r['final_status'] for r in rows)
+    by_report_rows.append([source_names[key], len(rows)] + [ctr[st] for st in statuses])
+
+# Evidence coverage and compression
+coverage_rows=[["evidence_layer","used_evidence","records_with_at_least_one_candidate","coverage_percent","notes"]]
+layers=[
+("S1 样号候选层","样号直接匹配或高置信归一化样号匹配","id_candidate_count","反映样号证据可覆盖范围"),
+("S2 来源/剖面候选层","outcrop_norm / section_norm","source_candidate_count","反映来源/剖面对非直接联通记录的候选生成能力"),
+("S3 地层候选层","strat_unit_norm","strat_candidate_count","反映地层信息对候选空间的约束能力"),
+("S4 岩性支持层","lithology_norm","lithology_candidate_count","反映岩性描述的裁剪能力；弱支持，不单独强排除"),
+("S5 完整工作流","综合规则与保守回退","final_candidate_count","最终保留至少 1 个可审计候选的记录范围")
+]
+for name,evid,col,note in layers:
+    cnt=sum(1 for r in linkage3 if r[col]>0)
+    coverage_rows.append([name,evid,cnt,round(cnt/total*100,2),note])
+
+compression_rows=[["layer","average_candidate_count_all_records","candidate_reduction_percent","median_candidate_count_all_records","notes"]]
+# S0 initial baseline
+compression_rows.append(["S0 初始基准空间",100,0,100,"作为候选空间上限"])
+for name,evid,col,note in layers:
+    counts=[r[col] for r in linkage3]
+    avg=statistics.mean(counts)
+    med=statistics.median(counts)
+    comp=1-avg/100
+    compression_rows.append([name,round(avg,2),round(comp*100,2),med,note])
+
+# Candidate distribution
+dist_rows=[["final_candidate_count_range","record_count","percent_all_records","percent_candidate_records","interpretation"]]
+positive_n=sum(1 for r in linkage3 if r['final_candidate_count']>0)
+ranges=[
+("|C_f|=0", lambda c:c==0, "unresolved"),
+("|C_f|=1", lambda c:c==1, "唯一候选或已验证联通"),
+("2≤|C_f|≤5", lambda c:2<=c<=5, "低人工复核负担"),
+("6≤|C_f|≤10", lambda c:6<=c<=10, "中等人工复核负担"),
+("|C_f|>10", lambda c:c>10, "仍需进一步数据补充或规则细化")
+]
+for label,func,interp in ranges:
+    c=sum(1 for r in linkage3 if func(r['final_candidate_count']))
+    pct_all=round(c/total*100,2)
+    pct_pos="" if label=="|C_f|=0" else round(c/positive_n*100,2)
+    dist_rows.append([label,c,pct_all,pct_pos,interp])
+dist_rows.append(["positive_candidate_average", round(statistics.mean([r['final_candidate_count'] for r in linkage3 if r['final_candidate_count']>0]),2),"","","只统计 final_candidate_count > 0"])
+dist_rows.append(["positive_candidate_median", statistics.median([r['final_candidate_count'] for r in linkage3 if r['final_candidate_count']>0]),"","","只统计 final_candidate_count > 0"])
+
+# failure reason
+failure_ctr=Counter(r['failure_reason'] for r in linkage3 if r['final_status']=='unresolved')
+failure_rows=[["failure_reason","record_count","percent_of_unresolved","interpretation"]]
+failure_interps={
+"outside_baseline":"记录对应样品、层位或露头超出当前 baseline_samples 覆盖范围",
+"missing_source_and_stratigraphy":"来源/剖面和地层信息均不足，无法形成可靠候选",
+"missing_source":"来源/剖面信息不足，当前样号或层位不足以形成可靠候选",
+"missing_stratigraphy":"地层信息不足，无法进行地质约束",
+"evidence_conflict_or_outside_baseline":"现有证据组合无法在基准空间内形成一致候选",
+"insufficient_context":"上下文字段不足"
+}
+for reason,c in failure_ctr.most_common():
+    failure_rows.append([reason,c,round(c/status_counts['unresolved']*100,2),failure_interps.get(reason,"其他")])
+
+# audit 30
+sample_label_map = {
+"HSR011":"2-C82-6","HSR043":"3-C81-18","HSR093":"8-C7-2","HSR111":"8-C63-20","HSR146":"10-C61-9","HSR132":"9-C62-8",
+"XRF0034":"2-长82-14","XRF0067":"3-长81-18","XRF0136":"8-长7-2","XRF0160":"8-长63-20","XRF0189":"9-长62-8","XRF0218":"11-长61-2",
+"LAS022":"长82-19","LAS058":"长81-34","LAS095":"长7-5","LAS110":"长63-20","LAS131":"长62-8","LAS147":"长61-11",
+"TPA015":"长82-15","TPA034":"长81-21","TPA071":"长7-5","TPA085":"长63-20","TPA106":"长62-12","TPA119":"长61-16",
+"GRAIN_0011":"长82-19","GRAIN_0044":"长81-34","GRAIN_0091":"长63-27","GRAIN_0099":"长62-7","GRAIN_0100":"长62-8","GRAIN_0131":"长61-16"
+}
+audit_rows=[["record_id","manual_sample_label","source_type","system_status","final_candidate_count","matched_baseline_id","candidate_baseline_ids","audit_category","audit_result","audit_basis"]]
+for rid in sample_ids:
+    r=next((x for x in linkage3 if x['record_id']==rid), None)
+    if not r: continue
+    if r['final_status'] in ('verified','strong_candidate'):
+        cat="唯一候选/直接对应样本"
+        res="pass"
+        basis="系统输出唯一候选；需按PDF/目录复核最终对应" if r['final_status']=='strong_candidate' else "系统输出 verified；候选与人工抽样来源一致"
+    elif r['final_status']=='candidate_level':
+        cat="候选集合覆盖样本"
+        res="pass"
+        basis="真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率"
+    else:
+        cat="unresolved样本"
+        res="not_covered"
+        basis="当前30条样本未覆盖 unresolved"
+    audit_rows.append([rid,sample_label_map.get(rid,""),r['source_type'],r['final_status'],r['final_candidate_count'],r['matched_baseline_id'],r['candidate_baseline_ids'],cat,res,basis])
+audit_summary_ctr=Counter([row[7] for row in audit_rows[1:]])
+audit_summary_rows=[["audit_category","sample_count","pass_count","audit_meaning"]]
+for cat in ["唯一候选/直接对应样本","候选集合覆盖样本","unresolved样本"]:
+    c=audit_summary_ctr.get(cat,0)
+    pass_count=sum(1 for row in audit_rows[1:] if row[7]==cat and row[8]=="pass")
+    meaning = {
+        "唯一候选/直接对应样本":"唯一候选一致性检查",
+        "候选集合覆盖样本":"候选覆盖检查，不等同于唯一匹配准确率",
+        "unresolved样本":"当前30条抽样未覆盖该状态"
+    }[cat]
+    audit_summary_rows.append([cat,c,pass_count,meaning])
+audit_summary_rows.append(["合计",sum(audit_summary_ctr.values()),sum(1 for row in audit_rows[1:] if row[8]=="pass"),"代表性人工审计结果"])
+
+# linkage table rows
+link_cols=["record_id","source_type","sample_id_raw","sample_id_norm","canon_sample_id","section_num","strat_group","outcrop_cat","id_candidate_count","source_candidate_count","strat_candidate_count","lithology_candidate_count","final_candidate_count","final_status","matched_baseline_id","candidate_baseline_ids","needs_manual_confirmation","evidence_used","failure_reason","notes"]
+link_rows=[link_cols]
+for r in linkage3:
+    link_rows.append([r.get(c,"") for c in link_cols])
+
+print("Done summaries", len(link_rows)-1, summary_rows, dist_rows, failure_rows)

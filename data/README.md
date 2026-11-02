@@ -1,3 +1,5 @@
+> Historical dataset: these files reproduce the earlier released workflow. For the revised D3 evaluation, use [`revision_20261102/`](../revision_20261102/).
+
 # Data Directory
 
 This directory contains the data needed to inspect and validate the provenance

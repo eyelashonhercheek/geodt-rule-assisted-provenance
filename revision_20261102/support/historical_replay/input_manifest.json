@@ -1,0 +1,56 @@
+[
+  {
+    "file": "input_tables/analysis_records_grain_size_full.xlsx",
+    "bytes": 28384,
+    "sha256": "a8e0074bb5f55ff483ba54bfab9541002ec1ea80115ea29946fb7f4a16e300bd",
+    "scope": "retained source-table snapshot for historical replay; not asserted to have original runtime byte hashes"
+  },
+  {
+    "file": "input_tables/analysis_records_hyperspectral_full.xlsx",
+    "bytes": 37343,
+    "sha256": "2d7138bd507a598128351f1596c40dee3ebb5be516ff57245b08073330879942",
+    "scope": "retained source-table snapshot for historical replay; not asserted to have original runtime byte hashes"
+  },
+  {
+    "file": "input_tables/analysis_records_laser_full.xlsx",
+    "bytes": 50817,
+    "sha256": "67bbeae2d88d03d4e05763f73f3d931e602371b2691634dc8e6c6e9175e7b87c",
+    "scope": "retained source-table snapshot for historical replay; not asserted to have original runtime byte hashes"
+  },
+  {
+    "file": "input_tables/analysis_records_thin_section_full.xlsx",
+    "bytes": 29971,
+    "sha256": "3e73c418fc636294ce7e6d0a11d7319555fba2b82a5feee89a3c3f33b79be0a8",
+    "scope": "retained source-table snapshot for historical replay; not asserted to have original runtime byte hashes"
+  },
+  {
+    "file": "input_tables/analysis_records_xrf_full.xlsx",
+    "bytes": 38350,
+    "sha256": "93c2494526f0ae74d0a8f9edbf6a1474b0740061fcebedc251881d62ff5ec720",
+    "scope": "retained source-table snapshot for historical replay; not asserted to have original runtime byte hashes"
+  },
+  {
+    "file": "input_tables/baseline_samples.xlsx",
+    "bytes": 16746,
+    "sha256": "fbe2805a5c06403d6a8645e68d5a74e4bc6ce6a5992fd46d603937c3b980aae3",
+    "scope": "retained source-table snapshot for historical replay; not asserted to have original runtime byte hashes"
+  },
+  {
+    "file": "input_tables/field_inventory.xlsx",
+    "bytes": 21441,
+    "sha256": "c78e7bf8daa1745318267c15ed7e9a3ba82877653e0907ab6f54e5e8192a8037",
+    "scope": "retained source-table snapshot for historical replay; not asserted to have original runtime byte hashes"
+  },
+  {
+    "file": "input_tables/normalization_rules.xlsx",
+    "bytes": 11664,
+    "sha256": "573d51120f8f17317f6941593a4bf29f2c309b98bde6a5ecf80ba60261d65f12",
+    "scope": "retained source-table snapshot for historical replay; not asserted to have original runtime byte hashes"
+  },
+  {
+    "file": "input_tables/regenerated_linkage_outputs_CG.xlsx",
+    "bytes": 135510,
+    "sha256": "8e050105c22fe1c992e68c12defb7c5116e5468aeae01c7cccba1369fe3d7f9c",
+    "scope": "retained source-table snapshot for historical replay; not asserted to have original runtime byte hashes"
+  }
+]

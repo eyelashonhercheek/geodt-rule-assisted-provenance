@@ -1,3 +1,5 @@
+> Historical dataset: these files reproduce the earlier released workflow. For the revised D3 evaluation, use [`revision_20261102/`](../../revision_20261102/).
+
 # Full Data Release
 
 These files are the full tabular data package for the C&G manuscript

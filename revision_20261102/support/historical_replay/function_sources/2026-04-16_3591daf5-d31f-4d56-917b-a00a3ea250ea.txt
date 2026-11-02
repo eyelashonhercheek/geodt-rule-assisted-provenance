@@ -1,0 +1,170 @@
+import pandas as pd, numpy as np, re, os, json, math
+
+# Load data
+def load_analysis(path):
+    xl=pd.ExcelFile(path)
+    sheet=xl.sheet_names[0]
+    df=pd.read_excel(path, sheet_name=sheet)
+    for col in df.columns:
+        df[col]=df[col].apply(to_str)
+    df['section_norm_std']=df['section_norm'].apply(norm_section)
+    df['strat_family']=df['strat_unit_norm'].apply(strat_family)
+    return df
+
+analysis_paths={
+    'hyperspectral':'/mnt/data/analysis_records_hyperspectral_corrected.xlsx',
+    'xrf':'/mnt/data/analysis_records_xrf_corrected.xlsx',
+    'laser':'/mnt/data/analysis_records_laser_corrected.xlsx',
+    'thin_section':'/mnt/data/analysis_records_thin_section_corrected.xlsx',
+    'grain_size':'/mnt/data/analysis_records_grain_size_corrected.xlsx',
+}
+analysis={k:load_analysis(v) for k,v in analysis_paths.items()}
+baseline=b.copy()
+
+baseline_outcrop_set=set(baseline['outcrop_norm'].dropna())
+
+def source_filter(cands, rec):
+    out=cands
+    if rec['outcrop_norm']:
+        out=out[out['outcrop_norm']==rec['outcrop_norm']]
+    if rec['section_norm_std']:
+        out=out[out['section_norm_std']==rec['section_norm_std']]
+    return out
+
+def strat_filter(cands, rec):
+    out=cands
+    if rec['strat_family']:
+        out=out[out['strat_family']==rec['strat_family']]
+    return out
+
+def lith_filter(cands, rec):
+    out=cands
+    if rec['lithology_norm']:
+        out=out[out['lithology_norm']==rec['lithology_norm']]
+    return out
+
+def exact_id_filter(cands, rec):
+    if rec['sample_id_norm']:
+        return cands[cands['sample_id_norm']==rec['sample_id_norm']]
+    return cands.iloc[0:0]
+
+def choose_failure_reason(rec, after_source, after_strat, after_lith, id_any, final_status, direct_path_count=None):
+    if final_status=='verified':
+        return None
+    if final_status=='candidate_level':
+        return 'multiple_candidates_remaining'
+    if final_status=='strong_candidate':
+        # why not verified?
+        if after_lith==0 and after_strat==1:
+            return 'conflicting_lithology'
+        if after_strat==0 and after_source==1:
+            # source unique but strat missing or conflicting
+            return 'missing_strat' if not rec['strat_family'] else 'conflicting_strat'
+        if after_source==1 and not rec['strat_family']:
+            return 'missing_strat'
+        # direct path duplicates but source unique maybe not used?
+        return 'multiple_candidates_remaining'
+    # unresolved
+    if rec['sample_id_norm'] is None:
+        return 'missing_id'
+    if rec['outcrop_norm'] and rec['outcrop_norm'] not in baseline_outcrop_set:
+        return 'outside_baseline_coverage'
+    if after_source==0:
+        if not rec['outcrop_norm'] and not rec['section_norm_std']:
+            return 'missing_source'
+        return 'outside_baseline_coverage'
+    if after_strat==0:
+        return 'missing_strat' if not rec['strat_family'] else 'conflicting_strat'
+    if after_lith==0:
+        return 'conflicting_lithology'
+    return 'multiple_candidates_remaining'
+
+def process_record(rec):
+    initial_count=len(baseline)
+    # counts for columns
+    id_cands=exact_id_filter(baseline, rec)
+    after_id_count=len(id_cands)
+    src_cands=source_filter(baseline, rec)
+    after_source_count=len(src_cands)
+    strat_cands=strat_filter(src_cands, rec)
+    after_strat_count=len(strat_cands)
+    lith_cands=lith_filter(strat_cands, rec)
+    after_lith_count=len(lith_cands)
+    
+    # direct path using exact id, optionally narrowed by source
+    id_source_cands=source_filter(id_cands, rec) if after_id_count>0 else id_cands
+    direct_count=len(id_source_cands)
+    
+    # Determine status
+    final_status=None
+    final_cands=None
+    matched_id=None
+    direct_linkable=False
+    rule_assisted_verified=False
+    
+    if direct_count==1:
+        final_status='verified'
+        final_cands=id_source_cands
+        matched_id=id_source_cands.iloc[0]['baseline_id']
+        direct_linkable=True
+    elif direct_count>1:
+        final_status='candidate_level'
+        final_cands=id_source_cands
+    else:
+        # no direct id resolution, try rule-assisted full trio
+        if after_lith_count==1 and rec['outcrop_norm'] and rec['section_norm_std'] and rec['strat_family'] and rec['lithology_norm']:
+            final_status='verified'
+            final_cands=lith_cands
+            matched_id=lith_cands.iloc[0]['baseline_id']
+            rule_assisted_verified=True
+        elif after_strat_count==1 and rec['outcrop_norm'] and rec['section_norm_std'] and rec['strat_family']:
+            final_status='strong_candidate'
+            final_cands=strat_cands
+            matched_id=strat_cands.iloc[0]['baseline_id']
+        elif after_source_count==1 and rec['outcrop_norm'] and rec['section_norm_std']:
+            final_status='strong_candidate'
+            final_cands=src_cands
+            matched_id=src_cands.iloc[0]['baseline_id']
+        elif after_lith_count>1:
+            final_status='candidate_level'
+            final_cands=lith_cands
+        elif after_strat_count>1:
+            final_status='candidate_level'
+            final_cands=strat_cands
+        elif after_source_count>1:
+            final_status='candidate_level'
+            final_cands=src_cands
+        else:
+            final_status='unresolved'
+            final_cands=baseline.iloc[0:0]
+    final_candidate_count=len(final_cands)
+    
+    needs_manual='Y' if final_status in ('strong_candidate','candidate_level','unresolved') else 'N'
+    failure_reason=choose_failure_reason(rec, after_source_count, after_strat_count, after_lith_count, after_id_count>0, final_status, direct_count)
+    
+    baseline_compatible = (after_id_count>0) or (after_lith_count==1 and rec['outcrop_norm'] and rec['section_norm_std'] and rec['strat_family'] and rec['lithology_norm'])
+    
+    return {
+        'record_id': rec['record_id'],
+        'source_type': rec['source_type'],
+        'sample_id_norm': rec['sample_id_norm'],
+        'initial_candidate_count': initial_count,
+        'after_id_count': after_id_count,
+        'after_source_count': after_source_count,
+        'after_strat_count': after_strat_count,
+        'after_lithology_count': after_lith_count,
+        'final_status': final_status,
+        'final_candidate_count': final_candidate_count,
+        'matched_baseline_id': matched_id,
+        'needs_manual_confirmation': needs_manual,
+        'failure_reason': failure_reason,
+        '_direct_linkable': direct_linkable,
+        '_rule_assisted_verified': rule_assisted_verified,
+        '_baseline_compatible': baseline_compatible,
+    }
+
+link_rows=[]
+for k,df in analysis.items():
+    link_rows.extend(process_record(rec) for _,rec in df.iterrows())
+link=pd.DataFrame(link_rows)
+link.shape, link.head(), link['final_status'].value_counts()

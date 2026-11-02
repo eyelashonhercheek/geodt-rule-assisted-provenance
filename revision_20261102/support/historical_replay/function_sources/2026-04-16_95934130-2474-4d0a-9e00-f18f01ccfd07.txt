@@ -1,0 +1,14 @@
+# adjust section derivation
+def parse_yanhe_section_from_outcrop(outcrop_raw):
+    s = clean_text(outcrop_raw)
+    if pd.isna(s): return (np.nan, np.nan, np.nan, np.nan)
+    s0 = s.replace(' ', '')
+    m = re.match(r'延河(\d+)号$', s0)
+    if m:
+        sec = m.group(1)
+        return (s0, '延河', sec, sec)
+    return (s0, normalize_outcrop(s0), np.nan, np.nan)
+
+# recompute affected rows quickly
+for rows_name in ['laser_rows','thin_rows','grain_rows']:
+    pass

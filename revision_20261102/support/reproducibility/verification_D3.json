@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "historical_prediction_rows_verified": 16800,
+  "D3_prediction_rows": 16800,
+  "engine_version": "0.4-r5 unchanged",
+  "field_correction": "BS060/61 explicit layer 长6→长7",
+  "full_summary": {
+    "D2": {
+      "scenario": "D2",
+      "input_version": "D2-stageA-transcription-plus-document-fields-r2",
+      "method": "full",
+      "reference_n": 429,
+      "targets_included": 390,
+      "reference_candidate_edges": 390,
+      "matching_native_accepts": 50,
+      "all_queries": 1400,
+      "all_candidate_edges": 6987,
+      "all_retained": 816,
+      "all_native_accepts": 50
+    },
+    "D3": {
+      "scenario": "D3",
+      "input_version": "D3-author-confirmed-baseline-layer-correction-20261029",
+      "method": "full",
+      "reference_n": 429,
+      "targets_included": 396,
+      "reference_candidate_edges": 396,
+      "matching_native_accepts": 52,
+      "all_queries": 1400,
+      "all_candidate_edges": 7031,
+      "all_retained": 822,
+      "all_native_accepts": 52
+    }
+  },
+  "full_states": {
+    "D2": {
+      "unresolved": 584,
+      "strong_candidate": 413,
+      "candidate_set": 353,
+      "rule_supported_link": 50
+    },
+    "D3": {
+      "unresolved": 578,
+      "strong_candidate": 396,
+      "candidate_set": 374,
+      "rule_supported_link": 52
+    }
+  },
+  "full_changed_queries": 29,
+  "all_method_changed_rows": 179,
+  "withheld_targets_D3": 33,
+  "withheld_document_holds_D3": 33,
+  "independent_accuracy_estimated": false,
+  "new_reference_links": 0,
+  "reference_frozen": false
+}

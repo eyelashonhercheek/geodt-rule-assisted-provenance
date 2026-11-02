@@ -1,0 +1,24 @@
+def parse_thin_page(page):
+    blocks=sorted(page.get_text("blocks"), key=lambda x:(round(x[1],1),x[0]))
+    meta_parts=[]
+    for b in blocks[:6]:
+        txt=b[4]
+        # stop once blocks are clearly structure content but include if still metadata split
+        meta_parts.append(txt)
+        if '岩石定名' in txt and ('野外命名' in txt or len(meta_parts)>=3):
+            # may still need next block if lith split? but okay
+            pass
+    meta="\n".join(meta_parts[:3]).replace('\xa0',' ')
+    # parse with optional field and split lith maybe across blocks
+    m=re.search(r"样品编号\s*(?P<sample_id>.*?)\s*露头名称\s*(?P<outcrop>.*?)\s*地层\s*(?P<strat>.*?)\s*岩石定名\s*(?P<lith>.*?)\s*(?:野外命名\s*(?P<field>.*?))?(?:结构|$)", meta, re.S)
+    if m:
+        return {k: clean_text(v) for k,v in m.groupdict().items()}
+    # fallback broader join
+    meta2="\n".join(b[4] for b in blocks[:5]).replace('\xa0',' ')
+    m=re.search(r"样品编号\s*(?P<sample_id>.*?)\s*露头名称\s*(?P<outcrop>.*?)\s*地层\s*(?P<strat>.*?)\s*岩石定名\s*(?P<lith>.*?)\s*(?:野外命名\s*(?P<field>.*?))?(?:结构|$)", meta2, re.S)
+    if m:
+        return {k: clean_text(v) for k,v in m.groupdict().items()}
+    return None
+
+for p in [7,8,38,190,192]:
+    print(p+1, parse_thin_page(thin_doc[p]))

@@ -1,0 +1,570 @@
+{
+  "status": "PASS",
+  "distinct_primary_records": 89,
+  "arms": {
+    "nonaccepted_stratified_random": 30,
+    "automatic_accept_census": 52,
+    "targeted_chain_extra": 7
+  },
+  "seeds": {
+    "stratified_selection": 2026102901,
+    "task_order": 2026102902,
+    "secondary_selection": 2026102903
+  },
+  "secondary_preselected_records": 23,
+  "secondary_review_completed": false,
+  "strata": {
+    "hyperspectral:strong_candidate": {
+      "population": 114,
+      "selected": [
+        "hyperspectral:138",
+        "hyperspectral:167"
+      ]
+    },
+    "hyperspectral:candidate_set": {
+      "population": 90,
+      "selected": [
+        "hyperspectral:68",
+        "hyperspectral:171"
+      ]
+    },
+    "hyperspectral:unresolved": {
+      "population": 96,
+      "selected": [
+        "hyperspectral:286",
+        "hyperspectral:246"
+      ]
+    },
+    "xrf:strong_candidate": {
+      "population": 116,
+      "selected": [
+        "xrf:173",
+        "xrf:62"
+      ]
+    },
+    "xrf:candidate_set": {
+      "population": 145,
+      "selected": [
+        "xrf:71",
+        "xrf:207"
+      ]
+    },
+    "xrf:unresolved": {
+      "population": 39,
+      "selected": [
+        "xrf:268",
+        "xrf:290"
+      ]
+    },
+    "laser:strong_candidate": {
+      "population": 84,
+      "selected": [
+        "laser:68",
+        "laser:99"
+      ]
+    },
+    "laser:candidate_set": {
+      "population": 51,
+      "selected": [
+        "laser:17",
+        "laser:51"
+      ]
+    },
+    "laser:unresolved": {
+      "population": 262,
+      "selected": [
+        "laser:208",
+        "laser:392"
+      ]
+    },
+    "thin_section:strong_candidate": {
+      "population": 75,
+      "selected": [
+        "thin_section:102",
+        "thin_section:97"
+      ]
+    },
+    "thin_section:candidate_set": {
+      "population": 43,
+      "selected": [
+        "thin_section:135",
+        "thin_section:120"
+      ]
+    },
+    "thin_section:unresolved": {
+      "population": 77,
+      "selected": [
+        "thin_section:187",
+        "thin_section:130"
+      ]
+    },
+    "grain_size:strong_candidate": {
+      "population": 7,
+      "selected": [
+        "grain_size:42",
+        "grain_size:50"
+      ]
+    },
+    "grain_size:candidate_set": {
+      "population": 45,
+      "selected": [
+        "grain_size:200",
+        "grain_size:45"
+      ]
+    },
+    "grain_size:unresolved": {
+      "population": 104,
+      "selected": [
+        "grain_size:148",
+        "grain_size:58"
+      ]
+    }
+  },
+  "selected_tasks": [
+    {
+      "record_key": "hyperspectral:138",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX001"
+    },
+    {
+      "record_key": "grain_size:32",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX002"
+    },
+    {
+      "record_key": "grain_size:121",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX003"
+    },
+    {
+      "record_key": "xrf:290",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX004"
+    },
+    {
+      "record_key": "grain_size:101",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX005"
+    },
+    {
+      "record_key": "laser:392",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX006"
+    },
+    {
+      "record_key": "thin_section:137",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX007"
+    },
+    {
+      "record_key": "grain_size:44",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX008"
+    },
+    {
+      "record_key": "grain_size:2",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX009"
+    },
+    {
+      "record_key": "thin_section:133",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX010"
+    },
+    {
+      "record_key": "grain_size:39",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX011"
+    },
+    {
+      "record_key": "grain_size:113",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX012"
+    },
+    {
+      "record_key": "grain_size:18",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX013"
+    },
+    {
+      "record_key": "grain_size:24",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX014"
+    },
+    {
+      "record_key": "thin_section:120",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX015"
+    },
+    {
+      "record_key": "grain_size:123",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX016"
+    },
+    {
+      "record_key": "grain_size:129",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX017"
+    },
+    {
+      "record_key": "grain_size:112",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX018"
+    },
+    {
+      "record_key": "grain_size:45",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX019"
+    },
+    {
+      "record_key": "grain_size:13",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX020"
+    },
+    {
+      "record_key": "xrf:14",
+      "sampling_arm": "targeted_chain_extra",
+      "task_id": "EX021"
+    },
+    {
+      "record_key": "grain_size:28",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX022"
+    },
+    {
+      "record_key": "grain_size:200",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX023"
+    },
+    {
+      "record_key": "thin_section:129",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX024"
+    },
+    {
+      "record_key": "hyperspectral:286",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX025"
+    },
+    {
+      "record_key": "grain_size:148",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX026"
+    },
+    {
+      "record_key": "laser:51",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX027"
+    },
+    {
+      "record_key": "laser:26",
+      "sampling_arm": "targeted_chain_extra",
+      "task_id": "EX028"
+    },
+    {
+      "record_key": "grain_size:114",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX029"
+    },
+    {
+      "record_key": "grain_size:20",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX030"
+    },
+    {
+      "record_key": "grain_size:31",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX031"
+    },
+    {
+      "record_key": "hyperspectral:171",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX032"
+    },
+    {
+      "record_key": "grain_size:58",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX033"
+    },
+    {
+      "record_key": "grain_size:40",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX034"
+    },
+    {
+      "record_key": "grain_size:125",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX035"
+    },
+    {
+      "record_key": "grain_size:122",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX036"
+    },
+    {
+      "record_key": "thin_section:102",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX037"
+    },
+    {
+      "record_key": "laser:17",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX038"
+    },
+    {
+      "record_key": "thin_section:136",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX039"
+    },
+    {
+      "record_key": "grain_size:117",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX040"
+    },
+    {
+      "record_key": "xrf:71",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX041"
+    },
+    {
+      "record_key": "thin_section:130",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX042"
+    },
+    {
+      "record_key": "xrf:173",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX043"
+    },
+    {
+      "record_key": "laser:99",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX044"
+    },
+    {
+      "record_key": "grain_size:48",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX045"
+    },
+    {
+      "record_key": "grain_size:27",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX046"
+    },
+    {
+      "record_key": "xrf:268",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX047"
+    },
+    {
+      "record_key": "laser:3",
+      "sampling_arm": "targeted_chain_extra",
+      "task_id": "EX048"
+    },
+    {
+      "record_key": "hyperspectral:3",
+      "sampling_arm": "targeted_chain_extra",
+      "task_id": "EX049"
+    },
+    {
+      "record_key": "hyperspectral:68",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX050"
+    },
+    {
+      "record_key": "grain_size:106",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX051"
+    },
+    {
+      "record_key": "laser:208",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX052"
+    },
+    {
+      "record_key": "grain_size:46",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX053"
+    },
+    {
+      "record_key": "thin_section:97",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX054"
+    },
+    {
+      "record_key": "laser:69",
+      "sampling_arm": "targeted_chain_extra",
+      "task_id": "EX055"
+    },
+    {
+      "record_key": "grain_size:52",
+      "sampling_arm": "targeted_chain_extra",
+      "task_id": "EX056"
+    },
+    {
+      "record_key": "grain_size:126",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX057"
+    },
+    {
+      "record_key": "laser:103",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX058"
+    },
+    {
+      "record_key": "grain_size:17",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX059"
+    },
+    {
+      "record_key": "grain_size:30",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX060"
+    },
+    {
+      "record_key": "thin_section:135",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX061"
+    },
+    {
+      "record_key": "laser:102",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX062"
+    },
+    {
+      "record_key": "laser:68",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX063"
+    },
+    {
+      "record_key": "grain_size:19",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX064"
+    },
+    {
+      "record_key": "grain_size:42",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX065"
+    },
+    {
+      "record_key": "laser:94",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX066"
+    },
+    {
+      "record_key": "grain_size:41",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX067"
+    },
+    {
+      "record_key": "hyperspectral:246",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX068"
+    },
+    {
+      "record_key": "grain_size:33",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX069"
+    },
+    {
+      "record_key": "grain_size:111",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX070"
+    },
+    {
+      "record_key": "grain_size:103",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX071"
+    },
+    {
+      "record_key": "xrf:62",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX072"
+    },
+    {
+      "record_key": "hyperspectral:167",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX073"
+    },
+    {
+      "record_key": "grain_size:7",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX074"
+    },
+    {
+      "record_key": "grain_size:131",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX075"
+    },
+    {
+      "record_key": "xrf:207",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX076"
+    },
+    {
+      "record_key": "grain_size:15",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX077"
+    },
+    {
+      "record_key": "grain_size:22",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX078"
+    },
+    {
+      "record_key": "grain_size:107",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX079"
+    },
+    {
+      "record_key": "grain_size:110",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX080"
+    },
+    {
+      "record_key": "grain_size:3",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX081"
+    },
+    {
+      "record_key": "grain_size:37",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX082"
+    },
+    {
+      "record_key": "thin_section:132",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX083"
+    },
+    {
+      "record_key": "laser:81",
+      "sampling_arm": "targeted_chain_extra",
+      "task_id": "EX084"
+    },
+    {
+      "record_key": "grain_size:26",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX085"
+    },
+    {
+      "record_key": "grain_size:50",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX086"
+    },
+    {
+      "record_key": "thin_section:187",
+      "sampling_arm": "nonaccepted_stratified_random",
+      "task_id": "EX087"
+    },
+    {
+      "record_key": "grain_size:9",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX088"
+    },
+    {
+      "record_key": "grain_size:8",
+      "sampling_arm": "automatic_accept_census",
+      "task_id": "EX089"
+    }
+  ]
+}

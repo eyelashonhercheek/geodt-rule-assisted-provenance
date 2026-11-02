@@ -1,0 +1,49 @@
+﻿evidence_group,method,n,targets_included,candidate_edges,nonempty_queries,matching_native_accepts
+Directory-listed,format_id,250,250,271,250,0
+Directory-listed,full,250,217,217,217,52
+Directory-listed,no_alias,250,217,217,217,52
+Directory-listed,no_conflict_gate,250,250,271,250,47
+Directory-listed,no_fallback,250,214,214,214,52
+Directory-listed,no_identifier_evidence,250,250,5509,250,0
+Directory-listed,no_lithology,250,217,217,217,52
+Directory-listed,no_source,250,217,235,217,0
+Directory-listed,no_stratigraphy,250,217,217,217,215
+Directory-listed,parsed_alias_id,250,250,271,250,0
+Directory-listed,raw_id,250,2,2,2,0
+Directory-listed,strict_multifield,250,245,245,245,0
+Hyperspectral code-derived,format_id,93,0,0,0,0
+Hyperspectral code-derived,full,93,93,93,93,0
+Hyperspectral code-derived,no_alias,93,93,1987,93,0
+Hyperspectral code-derived,no_conflict_gate,93,93,93,93,0
+Hyperspectral code-derived,no_fallback,93,89,89,89,0
+Hyperspectral code-derived,no_identifier_evidence,93,93,2029,93,0
+Hyperspectral code-derived,no_lithology,93,93,93,93,0
+Hyperspectral code-derived,no_source,93,93,101,93,0
+Hyperspectral code-derived,no_stratigraphy,93,93,93,93,0
+Hyperspectral code-derived,parsed_alias_id,93,93,101,93,0
+Hyperspectral code-derived,raw_id,93,0,0,0,0
+Hyperspectral code-derived,strict_multifield,93,89,89,89,0
+XRF code-derived,format_id,85,0,0,0,0
+XRF code-derived,full,85,85,85,85,0
+XRF code-derived,no_alias,85,85,1899,85,0
+XRF code-derived,no_conflict_gate,85,85,85,85,0
+XRF code-derived,no_fallback,85,81,81,81,0
+XRF code-derived,no_identifier_evidence,85,3,9,3,0
+XRF code-derived,no_lithology,85,85,85,85,0
+XRF code-derived,no_source,85,85,92,85,0
+XRF code-derived,no_stratigraphy,85,85,85,85,0
+XRF code-derived,parsed_alias_id,85,85,92,85,0
+XRF code-derived,raw_id,85,0,0,0,0
+XRF code-derived,strict_multifield,85,81,81,81,0
+Same-report catalogue,format_id,1,1,1,1,0
+Same-report catalogue,full,1,1,1,1,0
+Same-report catalogue,no_alias,1,1,1,1,0
+Same-report catalogue,no_conflict_gate,1,1,1,1,0
+Same-report catalogue,no_fallback,1,1,1,1,0
+Same-report catalogue,no_identifier_evidence,1,1,6,1,0
+Same-report catalogue,no_lithology,1,1,1,1,0
+Same-report catalogue,no_source,1,1,1,1,0
+Same-report catalogue,no_stratigraphy,1,1,1,1,0
+Same-report catalogue,parsed_alias_id,1,1,1,1,0
+Same-report catalogue,raw_id,1,0,0,0,0
+Same-report catalogue,strict_multifield,1,1,1,1,0

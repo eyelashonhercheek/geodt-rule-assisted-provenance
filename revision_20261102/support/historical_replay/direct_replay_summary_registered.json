@@ -1,0 +1,35 @@
+{
+  "total_parsed": 800,
+  "direct_replay_count": 261,
+  "counts_by_type": {
+    "laser": 94,
+    "thin": 80,
+    "grain": 87
+  },
+  "historical_logged_counts": {
+    "laser": 94,
+    "thin": 80,
+    "grain": 87
+  },
+  "historical_output_binary_recovered": false,
+  "historical_input_byte_hashes_available": false,
+  "fallback_sources_in_accepted": 0,
+  "pdf_library": "1.26.7",
+  "source_manifest": [
+    {
+      "path": "原始报告/5.激光测试与分析.pdf",
+      "sha256": "6387ad7a13565ea04489c9803928ba846037bc5f605f38e02d6cb21ac8f83f2d",
+      "pdf_pages": 213
+    },
+    {
+      "path": "原始报告/岩石薄片分析-200_compressed.pdf",
+      "sha256": "abbc024aecbf9156281c24248137524c6f38b988afeadbf3702535e886d2423e",
+      "pdf_pages": 207
+    },
+    {
+      "path": "原始报告/岩石粒度分析-200.pdf",
+      "sha256": "e2af252743df335598c85138324ae91cb2c7b06dd3e1e46a883e0c0473ac3831",
+      "pdf_pages": 206
+    }
+  ]
+}

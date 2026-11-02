@@ -1,0 +1,9 @@
+direct linkable 261
+rule assisted verified 21
+             _direct_linkable  _rule_assisted_verified  _baseline_compatible
+source_type                                                                 
+XRF测试报告                     0                        4                     4
+岩石粒度分析报告                   87                        0                   102
+岩石薄片分析报告                   80                        0                    92
+激光测试与分析报告                  94                       14                   124
+高光谱矿物分析报告                   0                        3                     3

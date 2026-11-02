@@ -1,0 +1,147 @@
+import fitz, re, os, pandas as pd, numpy as np, math, json, textwrap
+base='/mnt/data'
+
+# Helpers
+dash_chars = '\u2010\u2011\u2012\u2013\u2014\u2212\uFE63\uFF0D‐‑‒–—−﹣－'
+dash_re = re.compile(f'[{re.escape(dash_chars)}]')
+ws_re = re.compile(r'\s+')
+
+def clean_text(s):
+    if s is None or (isinstance(s, float) and pd.isna(s)):
+        return np.nan
+    s = str(s).replace('\xa0',' ').replace('\u3000',' ')
+    s = s.strip()
+    s = re.sub(r'[ \t]+', ' ', s)
+    return s if s != '' else np.nan
+
+def normalize_sample_id(raw):
+    s = clean_text(raw)
+    if pd.isna(s): 
+        return np.nan
+    s = dash_re.sub('-', s)
+    s = re.sub(r'\s+', '', s)
+    return s
+
+def normalize_simple(raw):
+    s = clean_text(raw)
+    if pd.isna(s): return np.nan
+    s = dash_re.sub('-', s)
+    s = re.sub(r'\s+', ' ', s)
+    return s
+
+def normalize_strat(raw):
+    s = clean_text(raw)
+    if pd.isna(s): return np.nan
+    s = dash_re.sub('-', s)
+    s = s.replace(' ', '')
+    return s
+
+def normalize_lith(raw):
+    s = clean_text(raw)
+    if pd.isna(s): return np.nan
+    s = dash_re.sub('-', s)
+    s = re.sub(r'\s+', '', s)  # lithology strings should not contain spaces in Chinese phrases
+    return s
+
+def parse_yanhe_section_from_outcrop(outcrop_raw):
+    s = clean_text(outcrop_raw)
+    if pd.isna(s): return (np.nan, np.nan, np.nan, np.nan)
+    s0 = s.replace(' ', '')
+    m = re.match(r'延河(\d+)号$', s0)
+    if m:
+        sec = m.group(1)
+        return (s0, '延河', f'{sec}号', sec)
+    return (s0, normalize_outcrop(s0), np.nan, np.nan)
+
+def normalize_outcrop(raw):
+    s = clean_text(raw)
+    if pd.isna(s): return np.nan
+    s = s.replace(' ', '')
+    # raw full names to location-level normalization
+    if re.match(r'延河\d+号$', s):
+        return '延河'
+    mapping = {
+        '清水河':'准南清水河',
+        '准南清水河':'准南清水河',
+        '一线天':'准南一线天',
+        '准南一线天':'准南一线天',
+        '呼图壁':'准南呼图壁',
+        '准南呼图壁':'准南呼图壁',
+        '雀尔沟':'准南雀尔沟',
+        '准南雀尔沟':'准南雀尔沟',
+        '头屯河':'准南头屯河',
+        '准南头屯河':'准南头屯河',
+        '八道湾':'八道湾',
+        '西乡剖面':'西乡剖面',
+        '高家山剖面':'高家山剖面',
+        '岩性标准样':'岩性标准样',
+    }
+    return mapping.get(s, s)
+
+def section_from_numeric_raw(raw):
+    s = clean_text(raw)
+    if pd.isna(s): return (np.nan, np.nan, np.nan, np.nan)
+    s = s.replace(' ', '')
+    if re.fullmatch(r'\d+', s):
+        return (s, '延河', s, s)
+    return (s, normalize_outcrop(s), np.nan, np.nan)
+
+# parse laser
+laser_doc = fitz.open(os.path.join(base,'5.激光测试与分析(3).pdf'))
+laser_pat = re.compile(
+    r"报告编号：(?P<report_no>\S+).*?样品编号\s*(?P<sample_id>.*?)\s*扫描面状况.*?"
+    r"样品岩性\s*(?P<lith>.*?)\s*仪器型号.*?采样剖面\s*(?P<outcrop>.*?)\s*激光波段.*?"
+    r"采样层位\s*(?P<strat>.*?)\s*扫描距离.*?平均强度I\s*(?P<intensity>-?\d+(?:\.\d+)?)\s*平均振幅A\s*(?P<amp>-?\d+(?:\.\d+)?)",
+    re.S
+)
+laser_rows=[]
+for p in range(13, laser_doc.page_count):
+    txt = laser_doc[p].get_text("text")
+    report_page = p - 12
+    ms = list(laser_pat.finditer(txt))
+    if len(ms)==0:
+        # maybe trailing blank page? none
+        continue
+    for idx,m in enumerate(ms,1):
+        gd={k:clean_text(v) for k,v in m.groupdict().items()}
+        out_raw = gd['outcrop']
+        out_raw_norm_space = out_raw.replace(' ','') if isinstance(out_raw,str) else out_raw
+        if isinstance(out_raw_norm_space,str) and out_raw_norm_space.startswith('延河'):
+            outcrop_raw = out_raw_norm_space
+            outcrop_raw, outcrop_norm, section_raw, section_norm = parse_yanhe_section_from_outcrop(outcrop_raw)
+            notes = '样品页字段直接可读；延河N号已拆分为outcrop_norm=延河、section_norm=N'
+        else:
+            outcrop_raw = out_raw_norm_space
+            outcrop_norm = normalize_outcrop(outcrop_raw)
+            section_raw = np.nan
+            section_norm = np.nan
+            notes = '样品页字段直接可读；非延河样点仅做露头名称归一，不额外拆分section'
+        strat_raw = gd['strat']
+        # clean raw strat a bit, but keep visible style
+        strat_raw = clean_text(strat_raw)
+        # if extracted with spaces: remove outer spaces but keep internal as report extracted
+        analysis_summary = f"平均强度I={gd['intensity']};平均振幅A={gd['amp']}"
+        laser_rows.append({
+            'record_id': f'LAS{len(laser_rows)+1:03d}',
+            'source_type': '激光测试与分析报告',
+            'source_file': '5.激光测试与分析(3).pdf',
+            'report_page': report_page,
+            'sample_id_raw': gd['sample_id'],
+            'sample_id_norm': normalize_sample_id(gd['sample_id']),
+            'outcrop_raw': outcrop_raw,
+            'outcrop_norm': outcrop_norm,
+            'section_raw': section_raw,
+            'section_norm': section_norm,
+            'strat_unit_raw': strat_raw if not pd.isna(strat_raw) else np.nan,
+            'strat_unit_norm': normalize_strat(strat_raw),
+            'lithology_raw': gd['lith'],
+            'lithology_norm': normalize_lith(gd['lith']),
+            'analysis_type': '激光测试与分析',
+            'analysis_value_summary': analysis_summary,
+            'has_id': 'Y' if not pd.isna(gd['sample_id']) else 'N',
+            'has_outcrop': 'Y' if not pd.isna(outcrop_norm) else 'N',
+            'has_strat': 'Y' if not pd.isna(strat_raw) and strat_raw!='' else 'N',
+            'has_lithology': 'Y' if not pd.isna(gd['lith']) else 'N',
+            'notes': notes
+        })
+len(laser_rows), laser_rows[:2], laser_rows[-2:]

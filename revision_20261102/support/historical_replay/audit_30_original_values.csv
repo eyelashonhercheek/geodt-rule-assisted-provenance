@@ -1,0 +1,31 @@
+﻿record_id,manual_sample_label,source_type,system_status,final_candidate_count,matched_baseline_id,candidate_baseline_ids,audit_category,audit_result,audit_basis
+HSR011,2-C82-6,高光谱矿物分析报告,candidate_level,6,,BS004;BS005;BS006;BS007;BS008;BS009,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+HSR043,3-C81-18,高光谱矿物分析报告,verified,1,BS023,BS023,唯一候选/直接对应样本,pass,系统输出 verified；候选与人工抽样来源一致
+HSR093,8-C7-2,高光谱矿物分析报告,strong_candidate,1,BS055,BS055,唯一候选/直接对应样本,pass,系统输出唯一候选；需按PDF/目录复核最终对应
+HSR111,8-C63-20,高光谱矿物分析报告,candidate_level,17,,BS056;BS057;BS058;BS059;BS060;BS061;BS062;BS063;BS064;BS065;BS066;BS067;BS068;BS069;BS070;BS071;BS072,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+HSR146,10-C61-9,高光谱矿物分析报告,strong_candidate,1,BS090,BS090,唯一候选/直接对应样本,pass,系统输出唯一候选；需按PDF/目录复核最终对应
+HSR132,9-C62-8,高光谱矿物分析报告,verified,1,BS076,BS076,唯一候选/直接对应样本,pass,系统输出 verified；候选与人工抽样来源一致
+XRF0034,2-长82-14,XRF测试报告,verified,1,BS007,BS007,唯一候选/直接对应样本,pass,系统输出 verified；候选与人工抽样来源一致
+XRF0067,3-长81-18,XRF测试报告,verified,1,BS023,BS023,唯一候选/直接对应样本,pass,系统输出 verified；候选与人工抽样来源一致
+XRF0136,8-长7-2,XRF测试报告,strong_candidate,1,BS055,BS055,唯一候选/直接对应样本,pass,系统输出唯一候选；需按PDF/目录复核最终对应
+XRF0160,8-长63-20,XRF测试报告,candidate_level,17,,BS056;BS057;BS058;BS059;BS060;BS061;BS062;BS063;BS064;BS065;BS066;BS067;BS068;BS069;BS070;BS071;BS072,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+XRF0189,9-长62-8,XRF测试报告,verified,1,BS076,BS076,唯一候选/直接对应样本,pass,系统输出 verified；候选与人工抽样来源一致
+XRF0218,11-长61-2,XRF测试报告,verified,1,BS087,BS087,唯一候选/直接对应样本,pass,系统输出 verified；候选与人工抽样来源一致
+LAS022,长82-19,激光测试与分析报告,candidate_level,6,,BS004;BS005;BS006;BS007;BS008;BS009,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+LAS058,长81-34,激光测试与分析报告,candidate_level,39,,BS010;BS011;BS012;BS013;BS014;BS015;BS016;BS017;BS018;BS019;BS020;BS021;BS022;BS023;BS024;BS025;BS026;BS027;BS028;BS029;BS030;BS031;BS032;BS033;BS034;BS035;BS036;BS037;BS038;BS039;BS040;BS041;BS042;BS043;BS044;BS045;BS046;BS047;BS048,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+LAS095,长7-5,激光测试与分析报告,strong_candidate,1,BS055,BS055,唯一候选/直接对应样本,pass,系统输出唯一候选；需按PDF/目录复核最终对应
+LAS110,长63-20,激光测试与分析报告,candidate_level,17,,BS056;BS057;BS058;BS059;BS060;BS061;BS062;BS063;BS064;BS065;BS066;BS067;BS068;BS069;BS070;BS071;BS072,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+LAS131,长62-8,激光测试与分析报告,verified,1,BS076,BS076,唯一候选/直接对应样本,pass,系统输出 verified；候选与人工抽样来源一致
+LAS147,长61-11,激光测试与分析报告,verified,1,BS084,BS084,唯一候选/直接对应样本,pass,系统输出 verified；候选与人工抽样来源一致
+TPA015,长82-15,岩石薄片分析报告,candidate_level,6,,BS004;BS005;BS006;BS007;BS008;BS009,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+TPA034,长81-21,岩石薄片分析报告,candidate_level,39,,BS010;BS011;BS012;BS013;BS014;BS015;BS016;BS017;BS018;BS019;BS020;BS021;BS022;BS023;BS024;BS025;BS026;BS027;BS028;BS029;BS030;BS031;BS032;BS033;BS034;BS035;BS036;BS037;BS038;BS039;BS040;BS041;BS042;BS043;BS044;BS045;BS046;BS047;BS048,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+TPA071,长7-5,岩石薄片分析报告,strong_candidate,1,BS055,BS055,唯一候选/直接对应样本,pass,系统输出唯一候选；需按PDF/目录复核最终对应
+TPA085,长63-20,岩石薄片分析报告,candidate_level,17,,BS056;BS057;BS058;BS059;BS060;BS061;BS062;BS063;BS064;BS065;BS066;BS067;BS068;BS069;BS070;BS071;BS072,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+TPA106,长62-12,岩石薄片分析报告,candidate_level,6,,BS073;BS074;BS075;BS076;BS077;BS078,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+TPA119,长61-16,岩石薄片分析报告,candidate_level,7,,BS079;BS080;BS081;BS082;BS083;BS084;BS085,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+GRAIN_0011,长82-19,岩石粒度分析报告,candidate_level,6,,BS004;BS005;BS006;BS007;BS008;BS009,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+GRAIN_0044,长81-34,岩石粒度分析报告,candidate_level,39,,BS010;BS011;BS012;BS013;BS014;BS015;BS016;BS017;BS018;BS019;BS020;BS021;BS022;BS023;BS024;BS025;BS026;BS027;BS028;BS029;BS030;BS031;BS032;BS033;BS034;BS035;BS036;BS037;BS038;BS039;BS040;BS041;BS042;BS043;BS044;BS045;BS046;BS047;BS048,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+GRAIN_0091,长63-27,岩石粒度分析报告,verified,1,BS068,BS068,唯一候选/直接对应样本,pass,系统输出 verified；候选与人工抽样来源一致
+GRAIN_0099,长62-7,岩石粒度分析报告,candidate_level,6,,BS073;BS074;BS075;BS076;BS077;BS078,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率
+GRAIN_0100,长62-8,岩石粒度分析报告,verified,1,BS076,BS076,唯一候选/直接对应样本,pass,系统输出 verified；候选与人工抽样来源一致
+GRAIN_0131,长61-16,岩石粒度分析报告,candidate_level,9,,BS086;BS087;BS088;BS089;BS090;BS091;BS092;BS093;BS094,候选集合覆盖样本,pass,真实来源链条位于系统保留候选集合内；不等同唯一匹配准确率

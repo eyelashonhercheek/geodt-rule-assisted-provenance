@@ -1,0 +1,2 @@
+# Preserve registered archive bytes and SHA-256 manifests on every platform.
+revision_20261102/** -text whitespace=cr-at-eol

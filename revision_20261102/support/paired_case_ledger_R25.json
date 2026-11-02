@@ -1,0 +1,4269 @@
+[
+  {
+    "scope": "documentary429",
+    "key": "hyperspectral:4",
+    "target": "BS002",
+    "group": "full_only",
+    "mechanism": "weak_lithology_fallback",
+    "record_id": "HSR003",
+    "raw_identifier": "1-C82-2",
+    "baseline_identifier": "长 82-2",
+    "baseline_source": "延河 1 号",
+    "full_candidates": [
+      "BS002"
+    ],
+    "full_state": "strong_candidate",
+    "native_accept": null,
+    "fallback_applied": true,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS002"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS002"
+        ],
+        "after": [
+          "BS002"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS002"
+        ],
+        "after": [
+          "BS002"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS002"
+        ],
+        "after": [
+          "BS002"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS002"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS002"
+        ],
+        "after": [
+          "BS002"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "1-C82-2",
+      "detail_id": "1-C82-2",
+      "catalogue_source": null,
+      "detail_source": "1",
+      "detail_layer": "长 82",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 11,
+      "printed_page": 2,
+      "block": 1,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "hyperspectral:15",
+    "target": "BS004",
+    "group": "full_only",
+    "mechanism": "weak_lithology_fallback",
+    "record_id": "HSR014",
+    "raw_identifier": "2-C82-9",
+    "baseline_identifier": "长 82-9",
+    "baseline_source": "延河 2 号",
+    "full_candidates": [
+      "BS004"
+    ],
+    "full_state": "strong_candidate",
+    "native_accept": null,
+    "fallback_applied": true,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS004"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS004"
+        ],
+        "after": [
+          "BS004"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS004"
+        ],
+        "after": [
+          "BS004"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS004"
+        ],
+        "after": [
+          "BS004"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS004"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS004"
+        ],
+        "after": [
+          "BS004"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "2-C82-9",
+      "detail_id": "2-C82-9",
+      "catalogue_source": null,
+      "detail_source": "2",
+      "detail_layer": "长 82",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 16,
+      "printed_page": 7,
+      "block": 2,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "hyperspectral:119",
+    "target": "BS068",
+    "group": "full_only",
+    "mechanism": "weak_lithology_fallback",
+    "record_id": "HSR118",
+    "raw_identifier": "8-C63-27",
+    "baseline_identifier": "长 63-27",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [
+      "BS068"
+    ],
+    "full_state": "strong_candidate",
+    "native_accept": null,
+    "fallback_applied": true,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS068"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS068"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "8-C63-27",
+      "detail_id": "8-C63-27",
+      "catalogue_source": null,
+      "detail_source": "8",
+      "detail_layer": "长 63",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 68,
+      "printed_page": 59,
+      "block": 2,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "hyperspectral:124",
+    "target": "BS071",
+    "group": "full_only",
+    "mechanism": "weak_lithology_fallback",
+    "record_id": "HSR123",
+    "raw_identifier": "8-C63-32",
+    "baseline_identifier": "长 63-32",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [
+      "BS071"
+    ],
+    "full_state": "strong_candidate",
+    "native_accept": null,
+    "fallback_applied": true,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS071"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS071"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "8-C63-32",
+      "detail_id": "8-C63-32",
+      "catalogue_source": null,
+      "detail_source": "8",
+      "detail_layer": "长 63",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 71,
+      "printed_page": 62,
+      "block": 1,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "xrf:30",
+    "target": "BS004",
+    "group": "full_only",
+    "mechanism": "weak_lithology_fallback",
+    "record_id": "XRF0029",
+    "raw_identifier": "2-长 82-9",
+    "baseline_identifier": "长 82-9",
+    "baseline_source": "延河 2 号",
+    "full_candidates": [
+      "BS004"
+    ],
+    "full_state": "strong_candidate",
+    "native_accept": null,
+    "fallback_applied": true,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS004"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS004"
+        ],
+        "after": [
+          "BS004"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS004"
+        ],
+        "after": [
+          "BS004"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS004"
+        ],
+        "after": [
+          "BS004"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS004"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS004"
+        ],
+        "after": [
+          "BS004"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "2-长82-9",
+      "detail_id": "2-长 82-9",
+      "catalogue_source": null,
+      "detail_source": null,
+      "detail_layer": "长 82",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 24,
+      "printed_page": 15,
+      "block": 1,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "xrf:101",
+    "target": "BS037",
+    "group": "full_only",
+    "mechanism": "weak_lithology_fallback",
+    "record_id": "XRF0100",
+    "raw_identifier": "3-长 81-41",
+    "baseline_identifier": "长 81-41",
+    "baseline_source": "延河 3 号",
+    "full_candidates": [
+      "BS037"
+    ],
+    "full_state": "strong_candidate",
+    "native_accept": null,
+    "fallback_applied": true,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS037"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS037"
+        ],
+        "after": [
+          "BS037"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS037"
+        ],
+        "after": [
+          "BS037"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS037"
+        ],
+        "after": [
+          "BS037"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS037"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS037"
+        ],
+        "after": [
+          "BS037"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "3-长 81-41",
+      "detail_id": "3-长 81-41",
+      "catalogue_source": null,
+      "detail_source": null,
+      "detail_layer": "长 81",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 59,
+      "printed_page": 50,
+      "block": 2,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "xrf:171",
+    "target": "BS068",
+    "group": "full_only",
+    "mechanism": "weak_lithology_fallback",
+    "record_id": "XRF0170",
+    "raw_identifier": "8-长 63-27",
+    "baseline_identifier": "长 63-27",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [
+      "BS068"
+    ],
+    "full_state": "strong_candidate",
+    "native_accept": null,
+    "fallback_applied": true,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS068"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS068"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "8-长 63-27",
+      "detail_id": "8-长 63-27",
+      "catalogue_source": null,
+      "detail_source": null,
+      "detail_layer": "长 63",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 94,
+      "printed_page": 85,
+      "block": 2,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "xrf:178",
+    "target": "BS071",
+    "group": "full_only",
+    "mechanism": "weak_lithology_fallback",
+    "record_id": "XRF0177",
+    "raw_identifier": "8-长 63-32",
+    "baseline_identifier": "长 63-32",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [
+      "BS071"
+    ],
+    "full_state": "strong_candidate",
+    "native_accept": null,
+    "fallback_applied": true,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS071"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS071"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "8-长 63-32",
+      "detail_id": "8-长 63-32",
+      "catalogue_source": null,
+      "detail_source": null,
+      "detail_layer": "长 63",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 98,
+      "printed_page": 89,
+      "block": 1,
+      "stageA_note": "A04:expert confirmation required"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "thin_section:11",
+    "target": "BS004",
+    "group": "full_only",
+    "mechanism": "weak_lithology_fallback",
+    "record_id": "TPA010",
+    "raw_identifier": "长82-9",
+    "baseline_identifier": "长 82-9",
+    "baseline_source": "延河 2 号",
+    "full_candidates": [
+      "BS004"
+    ],
+    "full_state": "strong_candidate",
+    "native_accept": null,
+    "fallback_applied": true,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS004"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS004"
+        ],
+        "after": [
+          "BS004"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS004"
+        ],
+        "after": [
+          "BS004"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS004"
+        ],
+        "after": [
+          "BS004"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS004"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS004"
+        ],
+        "after": [
+          "BS004"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长 82-9",
+      "detail_id": "长 82‐9",
+      "catalogue_source": "延河 2 号",
+      "detail_source": "2",
+      "detail_layer": "长 82",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 17,
+      "printed_page": 10,
+      "block": 1,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "thin_section:92",
+    "target": "BS068",
+    "group": "full_only",
+    "mechanism": "weak_lithology_fallback",
+    "record_id": "TPA091",
+    "raw_identifier": "长63-27",
+    "baseline_identifier": "长 63-27",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [
+      "BS068"
+    ],
+    "full_state": "strong_candidate",
+    "native_accept": null,
+    "fallback_applied": true,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS068"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS068"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长 63-27",
+      "detail_id": "长 63‐27",
+      "catalogue_source": "延河 8 号",
+      "detail_source": "8",
+      "detail_layer": "长 63",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 98,
+      "printed_page": 91,
+      "block": 1,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "thin_section:96",
+    "target": "BS071",
+    "group": "full_only",
+    "mechanism": "weak_lithology_fallback",
+    "record_id": "TPA095",
+    "raw_identifier": "长63-32",
+    "baseline_identifier": "长 63-32",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [
+      "BS071"
+    ],
+    "full_state": "strong_candidate",
+    "native_accept": null,
+    "fallback_applied": true,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS071"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS071"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长 63-32",
+      "detail_id": "长 63‐32",
+      "catalogue_source": "延河 8 号",
+      "detail_source": "8",
+      "detail_layer": "长 63",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 102,
+      "printed_page": 95,
+      "block": 1,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:52",
+    "target": "BS039",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0051",
+    "raw_identifier": "长81-44",
+    "baseline_identifier": "长 81-44",
+    "baseline_source": "延河 3 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS039"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS039"
+        ],
+        "after": [
+          "BS039"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS039"
+        ],
+        "after": [
+          "BS039"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS039"
+        ],
+        "after": [
+          "BS039"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS039"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS039"
+        ],
+        "after": [
+          "BS039"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS039"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-45",
+      "detail_id": "长81-44",
+      "catalogue_source": "延河3号",
+      "detail_source": "延河3号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 57,
+      "printed_page": 51,
+      "block": 1,
+      "stageA_note": "A08:unresolved conflict; A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:53",
+    "target": "BS040",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0052",
+    "raw_identifier": "长81-45",
+    "baseline_identifier": "长 81-45",
+    "baseline_source": "延河 3 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS040"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS040"
+        ],
+        "after": [
+          "BS040"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS040"
+        ],
+        "after": [
+          "BS040"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS040"
+        ],
+        "after": [
+          "BS040"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS040"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS040"
+        ],
+        "after": [
+          "BS040"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS040"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-46",
+      "detail_id": "长81-45",
+      "catalogue_source": "延河3号",
+      "detail_source": "延河3号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 58,
+      "printed_page": 52,
+      "block": 1,
+      "stageA_note": "A08:unresolved conflict; A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:54",
+    "target": "BS041",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0053",
+    "raw_identifier": "长81-46",
+    "baseline_identifier": "长 81-46",
+    "baseline_source": "延河 3 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS041"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS041"
+        ],
+        "after": [
+          "BS041"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS041"
+        ],
+        "after": [
+          "BS041"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS041"
+        ],
+        "after": [
+          "BS041"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS041"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS041"
+        ],
+        "after": [
+          "BS041"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS041"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-47",
+      "detail_id": "长81-46",
+      "catalogue_source": "延河3号",
+      "detail_source": "延河3号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 59,
+      "printed_page": 53,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:55",
+    "target": "BS042",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0054",
+    "raw_identifier": "长81-47",
+    "baseline_identifier": "长 81-47",
+    "baseline_source": "延河 3 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS042"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS042"
+        ],
+        "after": [
+          "BS042"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS042"
+        ],
+        "after": [
+          "BS042"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS042"
+        ],
+        "after": [
+          "BS042"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS042"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS042"
+        ],
+        "after": [
+          "BS042"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS042"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-48",
+      "detail_id": "长81-47",
+      "catalogue_source": "延河3号",
+      "detail_source": "延河3号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 60,
+      "printed_page": 54,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:56",
+    "target": "BS043",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0055",
+    "raw_identifier": "长81-48",
+    "baseline_identifier": "长 81-48",
+    "baseline_source": "延河 3 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS043"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS043"
+        ],
+        "after": [
+          "BS043"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS043"
+        ],
+        "after": [
+          "BS043"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS043"
+        ],
+        "after": [
+          "BS043"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS043"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS043"
+        ],
+        "after": [
+          "BS043"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS043"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-50",
+      "detail_id": "长81-48",
+      "catalogue_source": "延河3号",
+      "detail_source": "延河3号",
+      "detail_layer": "长81",
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 61,
+      "printed_page": 55,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:57",
+    "target": "BS044",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0056",
+    "raw_identifier": "长81-50",
+    "baseline_identifier": "长 81-50",
+    "baseline_source": "延河 3 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS044"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS044"
+        ],
+        "after": [
+          "BS044"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS044"
+        ],
+        "after": [
+          "BS044"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS044"
+        ],
+        "after": [
+          "BS044"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS044"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS044"
+        ],
+        "after": [
+          "BS044"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS044"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-51",
+      "detail_id": "长81-50",
+      "catalogue_source": "延河3号",
+      "detail_source": "延河3号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 62,
+      "printed_page": 56,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:58",
+    "target": "BS045",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0057",
+    "raw_identifier": "长81-51",
+    "baseline_identifier": "长 81-51",
+    "baseline_source": "延河 3 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS045"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS045"
+        ],
+        "after": [
+          "BS045"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS045"
+        ],
+        "after": [
+          "BS045"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS045"
+        ],
+        "after": [
+          "BS045"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS045"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS045"
+        ],
+        "after": [
+          "BS045"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS045"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-52",
+      "detail_id": "长81-51",
+      "catalogue_source": "延河3号",
+      "detail_source": "延河3号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 63,
+      "printed_page": 57,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:60",
+    "target": "BS046",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0059",
+    "raw_identifier": "长81-53",
+    "baseline_identifier": "长 81-53",
+    "baseline_source": "延河 3 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS046"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS046"
+        ],
+        "after": [
+          "BS046"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS046"
+        ],
+        "after": [
+          "BS046"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS046"
+        ],
+        "after": [
+          "BS046"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS046"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS046"
+        ],
+        "after": [
+          "BS046"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS046"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-54",
+      "detail_id": "长81-53",
+      "catalogue_source": "延河3号",
+      "detail_source": "延河3号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 65,
+      "printed_page": 59,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:61",
+    "target": "BS047",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0060",
+    "raw_identifier": "长81-54",
+    "baseline_identifier": "长 81-54",
+    "baseline_source": "延河 3 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS047"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS047"
+        ],
+        "after": [
+          "BS047"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS047"
+        ],
+        "after": [
+          "BS047"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS047"
+        ],
+        "after": [
+          "BS047"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS047"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS047"
+        ],
+        "after": [
+          "BS047"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS047"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-55",
+      "detail_id": "长81-54",
+      "catalogue_source": "延河3号",
+      "detail_source": "延河3号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 66,
+      "printed_page": 60,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:63",
+    "target": "BS049",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0062",
+    "raw_identifier": "长81-1",
+    "baseline_identifier": "长 81-1",
+    "baseline_source": "延河 4 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS010",
+          "BS049"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS010",
+          "BS049"
+        ],
+        "after": [
+          "BS049"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS049"
+        ],
+        "after": [
+          "BS049"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS049"
+        ],
+        "after": [
+          "BS049"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS049"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS049"
+        ],
+        "after": [
+          "BS049"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS049"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-2",
+      "detail_id": "长81-1",
+      "catalogue_source": "延河4号",
+      "detail_source": "延河4号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 68,
+      "printed_page": 62,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:67",
+    "target": "BS050",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0066",
+    "raw_identifier": "长81-7",
+    "baseline_identifier": "长 81-7",
+    "baseline_source": "延河 4 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS050"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS050"
+        ],
+        "after": [
+          "BS050"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS050"
+        ],
+        "after": [
+          "BS050"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS050"
+        ],
+        "after": [
+          "BS050"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS050"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS050"
+        ],
+        "after": [
+          "BS050"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS050"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-8",
+      "detail_id": "长81-7",
+      "catalogue_source": "延河4号",
+      "detail_source": "延河4号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 72,
+      "printed_page": 66,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:68",
+    "target": "BS051",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0067",
+    "raw_identifier": "长81-8",
+    "baseline_identifier": "长 81-8",
+    "baseline_source": "延河 4 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS016",
+          "BS051"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS016",
+          "BS051"
+        ],
+        "after": [
+          "BS051"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS051"
+        ],
+        "after": [
+          "BS051"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS051"
+        ],
+        "after": [
+          "BS051"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS051"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS051"
+        ],
+        "after": [
+          "BS051"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS051"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-9",
+      "detail_id": "长81-8",
+      "catalogue_source": "延河4号",
+      "detail_source": "延河4号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 73,
+      "printed_page": 67,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:69",
+    "target": "BS052",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0068",
+    "raw_identifier": "长81-9",
+    "baseline_identifier": "长 81-9",
+    "baseline_source": "延河 4 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS052"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS052"
+        ],
+        "after": [
+          "BS052"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS052"
+        ],
+        "after": [
+          "BS052"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS052"
+        ],
+        "after": [
+          "BS052"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS052"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS052"
+        ],
+        "after": [
+          "BS052"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS052"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-10",
+      "detail_id": "长81-9",
+      "catalogue_source": "延河4号",
+      "detail_source": "延河4号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 74,
+      "printed_page": 68,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:70",
+    "target": "BS053",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0069",
+    "raw_identifier": "长81-10",
+    "baseline_identifier": "长 81-10",
+    "baseline_source": "延河 4 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS017",
+          "BS053"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS017",
+          "BS053"
+        ],
+        "after": [
+          "BS053"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS053"
+        ],
+        "after": [
+          "BS053"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS053"
+        ],
+        "after": [
+          "BS053"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS053"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS053"
+        ],
+        "after": [
+          "BS053"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS053"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-11",
+      "detail_id": "长81-10",
+      "catalogue_source": "延河4号",
+      "detail_source": "延河4号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 75,
+      "printed_page": 69,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:73",
+    "target": "BS055",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0072",
+    "raw_identifier": "长7-3",
+    "baseline_identifier": "长 7-3",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS055"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS055"
+        ],
+        "after": [
+          "BS055"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS055"
+        ],
+        "after": [
+          "BS055"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS055"
+        ],
+        "after": [
+          "BS055"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS055"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS055"
+        ],
+        "after": [
+          "BS055"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS055"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长7-4",
+      "detail_id": "长7-3",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 78,
+      "printed_page": 72,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:75",
+    "target": "BS060",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0074",
+    "raw_identifier": "长7-11",
+    "baseline_identifier": "长 7-11",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS060"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS060"
+        ],
+        "after": [
+          "BS060"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS060"
+        ],
+        "after": [
+          "BS060"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS060"
+        ],
+        "after": [
+          "BS060"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS060"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS060"
+        ],
+        "after": [
+          "BS060"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS060"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长7-12",
+      "detail_id": "长7-11",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 80,
+      "printed_page": 74,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:76",
+    "target": "BS061",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0075",
+    "raw_identifier": "长7-12",
+    "baseline_identifier": "长 7-12",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS061"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS061"
+        ],
+        "after": [
+          "BS061"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS061"
+        ],
+        "after": [
+          "BS061"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS061"
+        ],
+        "after": [
+          "BS061"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS061"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS061"
+        ],
+        "after": [
+          "BS061"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS061"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长62-6",
+      "detail_id": "长7-12",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 81,
+      "printed_page": 75,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:79",
+    "target": "BS057",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0078",
+    "raw_identifier": "长63-8",
+    "baseline_identifier": "长 63-8",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS057"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS057"
+        ],
+        "after": [
+          "BS057"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS057"
+        ],
+        "after": [
+          "BS057"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS057"
+        ],
+        "after": [
+          "BS057"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS057"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS057"
+        ],
+        "after": [
+          "BS057"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS057"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长63-9",
+      "detail_id": "长63-8",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 84,
+      "printed_page": 78,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:80",
+    "target": "BS058",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0079",
+    "raw_identifier": "长63-9",
+    "baseline_identifier": "长 63-9",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS058"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS058"
+        ],
+        "after": [
+          "BS058"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS058"
+        ],
+        "after": [
+          "BS058"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS058"
+        ],
+        "after": [
+          "BS058"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS058"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS058"
+        ],
+        "after": [
+          "BS058"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS058"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长63-10",
+      "detail_id": "长63-9",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 85,
+      "printed_page": 79,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:81",
+    "target": "BS059",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0080",
+    "raw_identifier": "长63-10",
+    "baseline_identifier": "长 63-10",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS059"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS059"
+        ],
+        "after": [
+          "BS059"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS059"
+        ],
+        "after": [
+          "BS059"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS059"
+        ],
+        "after": [
+          "BS059"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS059"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS059"
+        ],
+        "after": [
+          "BS059"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS059"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长63-13",
+      "detail_id": "长63-10",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 86,
+      "printed_page": 80,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:82",
+    "target": "BS062",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0081",
+    "raw_identifier": "长63-13",
+    "baseline_identifier": "长 63-13",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS062"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS062"
+        ],
+        "after": [
+          "BS062"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS062"
+        ],
+        "after": [
+          "BS062"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS062"
+        ],
+        "after": [
+          "BS062"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS062"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS062"
+        ],
+        "after": [
+          "BS062"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS062"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长63-15",
+      "detail_id": "长63-13",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 87,
+      "printed_page": 81,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:84",
+    "target": "BS063",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0083",
+    "raw_identifier": "长63-16",
+    "baseline_identifier": "长 63-16",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS063"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS063"
+        ],
+        "after": [
+          "BS063"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS063"
+        ],
+        "after": [
+          "BS063"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS063"
+        ],
+        "after": [
+          "BS063"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS063"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS063"
+        ],
+        "after": [
+          "BS063"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS063"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长63-18",
+      "detail_id": "长63-16",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 89,
+      "printed_page": 83,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:85",
+    "target": "BS064",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0084",
+    "raw_identifier": "长63-18",
+    "baseline_identifier": "长 63-18",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS064"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS064"
+        ],
+        "after": [
+          "BS064"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS064"
+        ],
+        "after": [
+          "BS064"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS064"
+        ],
+        "after": [
+          "BS064"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS064"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS064"
+        ],
+        "after": [
+          "BS064"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS064"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长63-21",
+      "detail_id": "长63-18",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 90,
+      "printed_page": 84,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:86",
+    "target": "BS065",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0085",
+    "raw_identifier": "长63-21",
+    "baseline_identifier": "长 63-21",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS065"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS065"
+        ],
+        "after": [
+          "BS065"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS065"
+        ],
+        "after": [
+          "BS065"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS065"
+        ],
+        "after": [
+          "BS065"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS065"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS065"
+        ],
+        "after": [
+          "BS065"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS065"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长63-22",
+      "detail_id": "长63-21",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 91,
+      "printed_page": 85,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:87",
+    "target": "BS066",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0086",
+    "raw_identifier": "长63-22",
+    "baseline_identifier": "长 63-22",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS066"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS066"
+        ],
+        "after": [
+          "BS066"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS066"
+        ],
+        "after": [
+          "BS066"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS066"
+        ],
+        "after": [
+          "BS066"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS066"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS066"
+        ],
+        "after": [
+          "BS066"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS066"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长63-23",
+      "detail_id": "长63-22",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 92,
+      "printed_page": 86,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:89",
+    "target": "BS067",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0088",
+    "raw_identifier": "长63-24",
+    "baseline_identifier": "长 63-24",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS067"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS067"
+        ],
+        "after": [
+          "BS067"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS067"
+        ],
+        "after": [
+          "BS067"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS067"
+        ],
+        "after": [
+          "BS067"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS067"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS067"
+        ],
+        "after": [
+          "BS067"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS067"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长63-25",
+      "detail_id": "长63-24",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 94,
+      "printed_page": 88,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:92",
+    "target": "BS068",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0091",
+    "raw_identifier": "长63-27",
+    "baseline_identifier": "长 63-27",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS068"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS068"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS068"
+        ],
+        "after": [
+          "BS068"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS068"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长63-28",
+      "detail_id": "长63-27",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": "长63",
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 97,
+      "printed_page": 91,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:94",
+    "target": "BS069",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0093",
+    "raw_identifier": "长63-29",
+    "baseline_identifier": "长 63-29",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS069"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS069"
+        ],
+        "after": [
+          "BS069"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS069"
+        ],
+        "after": [
+          "BS069"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS069"
+        ],
+        "after": [
+          "BS069"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS069"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS069"
+        ],
+        "after": [
+          "BS069"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS069"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长63-31",
+      "detail_id": "长63-29",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 99,
+      "printed_page": 93,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:95",
+    "target": "BS070",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0094",
+    "raw_identifier": "长63-31",
+    "baseline_identifier": "长 63-31",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS070"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS070"
+        ],
+        "after": [
+          "BS070"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS070"
+        ],
+        "after": [
+          "BS070"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS070"
+        ],
+        "after": [
+          "BS070"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS070"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS070"
+        ],
+        "after": [
+          "BS070"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS070"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长63-32",
+      "detail_id": "长63-31",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 100,
+      "printed_page": 94,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:96",
+    "target": "BS071",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0095",
+    "raw_identifier": "长63-32",
+    "baseline_identifier": "长 63-32",
+    "baseline_source": "延河 8 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS071"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS071"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS071"
+        ],
+        "after": [
+          "BS071"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS071"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长63-33",
+      "detail_id": "长63-32",
+      "catalogue_source": "延河8号",
+      "detail_source": "延河8号",
+      "detail_layer": "长63",
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 101,
+      "printed_page": 95,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:98",
+    "target": "BS073",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0097",
+    "raw_identifier": "长62-2",
+    "baseline_identifier": "长 62-2",
+    "baseline_source": "延河 9 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS073"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS073"
+        ],
+        "after": [
+          "BS073"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS073"
+        ],
+        "after": [
+          "BS073"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS073"
+        ],
+        "after": [
+          "BS073"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS073"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS073"
+        ],
+        "after": [
+          "BS073"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS073"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长62-4",
+      "detail_id": "长62-2",
+      "catalogue_source": "延河9号",
+      "detail_source": "延河9号",
+      "detail_layer": "长62",
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 103,
+      "printed_page": 97,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:134",
+    "target": "BS093",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0133",
+    "raw_identifier": "长61-18",
+    "baseline_identifier": "长 61-18",
+    "baseline_source": "延河 11 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS093"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS093"
+        ],
+        "after": [
+          "BS093"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS093"
+        ],
+        "after": [
+          "BS093"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS093"
+        ],
+        "after": [
+          "BS093"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS093"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS093"
+        ],
+        "after": [
+          "BS093"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS093"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长62-18",
+      "detail_id": "长61-18",
+      "catalogue_source": "延河11号",
+      "detail_source": "延河11号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 139,
+      "printed_page": 133,
+      "block": 1,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:135",
+    "target": "BS094",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0134",
+    "raw_identifier": "长61-19",
+    "baseline_identifier": "长 61-19",
+    "baseline_source": "延河 11 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS094"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS094"
+        ],
+        "after": [
+          "BS094"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS094"
+        ],
+        "after": [
+          "BS094"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS094"
+        ],
+        "after": [
+          "BS094"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS094"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS094"
+        ],
+        "after": [
+          "BS094"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS094"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长62-19",
+      "detail_id": "长61-19",
+      "catalogue_source": "延河11号",
+      "detail_source": "延河11号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 140,
+      "printed_page": 134,
+      "block": 1,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:185",
+    "target": "BS095",
+    "group": "full_only",
+    "mechanism": "unresolved_stratigraphic_comparability",
+    "record_id": "GRAIN_0184",
+    "raw_identifier": "Y5-1",
+    "baseline_identifier": "Y5-1",
+    "baseline_source": "八道湾",
+    "full_candidates": [
+      "BS095"
+    ],
+    "full_state": "strong_candidate",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS095"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS095"
+        ],
+        "after": [
+          "BS095"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS095"
+        ],
+        "after": [
+          "BS095"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS095"
+        ],
+        "after": [
+          "BS095"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS095"
+        ],
+        "after": [
+          "BS095"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "Y5-1",
+      "detail_id": "Y5-1",
+      "catalogue_source": "八道湾",
+      "detail_source": "八道湾",
+      "detail_layer": "Y5",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 190,
+      "printed_page": 184,
+      "block": 1,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "documentary429",
+    "key": "grain_size:190",
+    "target": "BS097",
+    "group": "full_only",
+    "mechanism": "unresolved_stratigraphic_comparability",
+    "record_id": "GRAIN_0189",
+    "raw_identifier": "Y10-2",
+    "baseline_identifier": "Y10-2",
+    "baseline_source": "八道湾",
+    "full_candidates": [
+      "BS097"
+    ],
+    "full_state": "strong_candidate",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS097"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS097"
+        ],
+        "after": [
+          "BS097"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS097"
+        ],
+        "after": [
+          "BS097"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS097"
+        ],
+        "after": [
+          "BS097"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS097"
+        ],
+        "after": [
+          "BS097"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "Y10-2",
+      "detail_id": "Y10-2",
+      "catalogue_source": "八道湾",
+      "detail_source": "八道湾",
+      "detail_layer": "Y10",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 195,
+      "printed_page": 189,
+      "block": 1,
+      "stageA_note": null
+    }
+  },
+  {
+    "scope": "human_reviewed_positive71",
+    "key": "grain_size:58",
+    "target": "BS045",
+    "task": "EX033",
+    "evidence_class": "A",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0057",
+    "raw_identifier": "长81-51",
+    "baseline_identifier": "长 81-51",
+    "baseline_source": "延河 3 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS045"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS045"
+        ],
+        "after": [
+          "BS045"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS045"
+        ],
+        "after": [
+          "BS045"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS045"
+        ],
+        "after": [
+          "BS045"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS045"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS045"
+        ],
+        "after": [
+          "BS045"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS045"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-52",
+      "detail_id": "长81-51",
+      "catalogue_source": "延河3号",
+      "detail_source": "延河3号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 63,
+      "printed_page": 57,
+      "block": 1,
+      "stageA_note": "A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "human_reviewed_positive71",
+    "key": "grain_size:52",
+    "target": "BS039",
+    "task": "EX056",
+    "evidence_class": "A",
+    "group": "strict_only",
+    "mechanism": "documentary_hold",
+    "record_id": "GRAIN_0051",
+    "raw_identifier": "长81-44",
+    "baseline_identifier": "长 81-44",
+    "baseline_source": "延河 3 号",
+    "full_candidates": [],
+    "full_state": "unresolved",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": true,
+    "trace": [
+      {
+        "operator": "candidate_entry_identifier",
+        "before": [],
+        "after": [
+          "BS039"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS039"
+        ],
+        "after": [
+          "BS039"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS039"
+        ],
+        "after": [
+          "BS039"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS039"
+        ],
+        "after": [
+          "BS039"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS039"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS039"
+        ],
+        "after": [
+          "BS039"
+        ]
+      },
+      {
+        "operator": "documentary_hold",
+        "before": [
+          "BS039"
+        ],
+        "after": []
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "长81-45",
+      "detail_id": "长81-44",
+      "catalogue_source": "延河3号",
+      "detail_source": "延河3号",
+      "detail_layer": null,
+      "source_disagreement": false,
+      "identifier_disagreement": true,
+      "inferred_locator": true,
+      "pdf_page": 57,
+      "printed_page": 51,
+      "block": 1,
+      "stageA_note": "A08:unresolved conflict; A09:unresolved conflict"
+    }
+  },
+  {
+    "scope": "human_reviewed_positive71",
+    "key": "xrf:207",
+    "target": "BS081",
+    "task": "EX076",
+    "evidence_class": "D",
+    "group": "full_only",
+    "mechanism": "contextual_candidate_entry",
+    "record_id": "XRF0206",
+    "raw_identifier": "10-长 61-6-1",
+    "baseline_identifier": "长 61-6",
+    "baseline_source": "延河 10 号",
+    "full_candidates": [
+      "BS079",
+      "BS080",
+      "BS081",
+      "BS082",
+      "BS083",
+      "BS084",
+      "BS085"
+    ],
+    "full_state": "candidate_set",
+    "native_accept": null,
+    "fallback_applied": false,
+    "documentary_hold": false,
+    "trace": [
+      {
+        "operator": "candidate_entry_source_and_layer",
+        "before": [],
+        "after": [
+          "BS079",
+          "BS080",
+          "BS081",
+          "BS082",
+          "BS083",
+          "BS084",
+          "BS085"
+        ]
+      },
+      {
+        "operator": "source",
+        "before": [
+          "BS079",
+          "BS080",
+          "BS081",
+          "BS082",
+          "BS083",
+          "BS084",
+          "BS085"
+        ],
+        "after": [
+          "BS079",
+          "BS080",
+          "BS081",
+          "BS082",
+          "BS083",
+          "BS084",
+          "BS085"
+        ]
+      },
+      {
+        "operator": "explicit_comparable_layer",
+        "before": [
+          "BS079",
+          "BS080",
+          "BS081",
+          "BS082",
+          "BS083",
+          "BS084",
+          "BS085"
+        ],
+        "after": [
+          "BS079",
+          "BS080",
+          "BS081",
+          "BS082",
+          "BS083",
+          "BS084",
+          "BS085"
+        ]
+      },
+      {
+        "operator": "layer_support_observation",
+        "before": [
+          "BS079",
+          "BS080",
+          "BS081",
+          "BS082",
+          "BS083",
+          "BS084",
+          "BS085"
+        ],
+        "after": [
+          "BS079",
+          "BS080",
+          "BS081",
+          "BS082",
+          "BS083",
+          "BS084",
+          "BS085"
+        ],
+        "applied_as_filter": false,
+        "supported_candidate_ids": [
+          "BS079",
+          "BS080",
+          "BS081",
+          "BS082",
+          "BS083",
+          "BS084",
+          "BS085"
+        ],
+        "identifier_derived_support_is_independent": false
+      },
+      {
+        "operator": "weak_lithology",
+        "before": [
+          "BS079",
+          "BS080",
+          "BS081",
+          "BS082",
+          "BS083",
+          "BS084",
+          "BS085"
+        ],
+        "after": [
+          "BS079",
+          "BS080",
+          "BS081",
+          "BS082",
+          "BS083",
+          "BS084",
+          "BS085"
+        ]
+      }
+    ],
+    "query_document": {
+      "catalogue_id": "10-长 61-6-1",
+      "detail_id": "10-长 61-6-1",
+      "catalogue_source": null,
+      "detail_source": null,
+      "detail_layer": "长 61",
+      "source_disagreement": false,
+      "identifier_disagreement": false,
+      "inferred_locator": false,
+      "pdf_page": 112,
+      "printed_page": 103,
+      "block": 2,
+      "stageA_note": null
+    }
+  }
+]

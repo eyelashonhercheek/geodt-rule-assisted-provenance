@@ -1,0 +1,46 @@
+{
+  "recovered_direct_count": 261,
+  "replayed_3_type_rows": 800,
+  "by_type": {
+    "laser": 94,
+    "thin": 80,
+    "grain": 87
+  },
+  "hyperspectral_xrf_without_aliases": {
+    "hyperspectral": {
+      "records": 300,
+      "exact_id_overlap_records": 0
+    },
+    "xrf": {
+      "records": 300,
+      "exact_id_overlap_records": 0
+    }
+  },
+  "full_field_vs_pdf_replay_pair_differences": [],
+  "historical_30_rows": 30,
+  "historical_20_suggestions": 20,
+  "combined_unique_record_ids": 50,
+  "stored_30_categories": {
+    "候选集合覆盖样本": 15,
+    "唯一候选/直接对应样本": 15
+  },
+  "suggestion_failure_reasons": {
+    "missing_source": 6,
+    "missing_source_and_stratigraphy": 3,
+    "outside_baseline": 11
+  },
+  "historical_original_261_binary_recovered": false,
+  "historical_complete_50_independent_case_judgments_recovered": false,
+  "261_vs_262_explanation": {
+    "record_id": "TPA014 / THS014",
+    "sample_id": "长82-14",
+    "directory_source": "延河2号",
+    "detail_source": "3",
+    "baseline": "BS007 / 延河2号",
+    "directory_pdf_physical_page": 3,
+    "detail_pdf_physical_page": 21,
+    "detail_report_printed_page": 14,
+    "historical_policy": "正文数字露头3转section=3；与BS007的section=2冲突，因此direct_count=0",
+    "status": "原始证据直接支持+计算可复现；目录与正文真实对应关系仍不由本次追溯裁定"
+  }
+}

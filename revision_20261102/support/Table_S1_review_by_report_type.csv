@@ -1,0 +1,6 @@
+﻿report_type,reviewed_records,supported_targets,insufficient_evidence,accepted_link_census,accepted_targets_supported,supported_targets_in_final_candidates,stratified_random_records,diagnostic_records
+Hyperspectral,7,3,4,0,0,3,6,1
+XRF,7,4,3,0,0,4,6,1
+Laser,13,9,4,3,3,9,6,4
+Thin-section,11,7,4,5,5,7,6,0
+Grain-size,51,48,3,44,44,46,6,1

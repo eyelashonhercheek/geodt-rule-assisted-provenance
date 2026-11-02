@@ -1,0 +1,76 @@
+# fix bool
+def process_record2(rec):
+    initial_count=len(baseline)
+    id_cands=exact_id_filter(baseline, rec)
+    after_id_count=len(id_cands)
+    src_cands=source_filter(baseline, rec)
+    after_source_count=len(src_cands)
+    strat_cands=strat_filter(src_cands, rec)
+    after_strat_count=len(strat_cands)
+    lith_cands=lith_filter(strat_cands, rec)
+    after_lith_count=len(lith_cands)
+    id_source_cands=source_filter(id_cands, rec) if after_id_count>0 else id_cands
+    direct_count=len(id_source_cands)
+    final_status=None
+    final_cands=baseline.iloc[0:0]
+    matched_id=None
+    direct_linkable=False
+    rule_assisted_verified=False
+    if direct_count==1:
+        final_status='verified'
+        final_cands=id_source_cands
+        matched_id=id_source_cands.iloc[0]['baseline_id']
+        direct_linkable=True
+    elif direct_count>1:
+        final_status='candidate_level'
+        final_cands=id_source_cands
+    else:
+        if after_lith_count==1 and bool(rec['outcrop_norm']) and bool(rec['section_norm_std']) and bool(rec['strat_family']) and bool(rec['lithology_norm']):
+            final_status='verified'
+            final_cands=lith_cands
+            matched_id=lith_cands.iloc[0]['baseline_id']
+            rule_assisted_verified=True
+        elif after_strat_count==1 and bool(rec['outcrop_norm']) and bool(rec['section_norm_std']) and bool(rec['strat_family']):
+            final_status='strong_candidate'
+            final_cands=strat_cands
+            matched_id=strat_cands.iloc[0]['baseline_id']
+        elif after_source_count==1 and bool(rec['outcrop_norm']) and bool(rec['section_norm_std']):
+            final_status='strong_candidate'
+            final_cands=src_cands
+            matched_id=src_cands.iloc[0]['baseline_id']
+        elif after_lith_count>1:
+            final_status='candidate_level'
+            final_cands=lith_cands
+        elif after_strat_count>1:
+            final_status='candidate_level'
+            final_cands=strat_cands
+        elif after_source_count>1:
+            final_status='candidate_level'
+            final_cands=src_cands
+        else:
+            final_status='unresolved'
+    final_candidate_count=len(final_cands)
+    needs_manual='Y' if final_status in ('strong_candidate','candidate_level','unresolved') else 'N'
+    failure_reason=choose_failure_reason(rec, after_source_count, after_strat_count, after_lith_count, after_id_count>0, final_status, direct_count)
+    baseline_compatible = (after_id_count>0) or (after_lith_count==1 and bool(rec['outcrop_norm']) and bool(rec['section_norm_std']) and bool(rec['strat_family']) and bool(rec['lithology_norm']))
+    return {
+        'record_id': rec['record_id'],
+        'source_type': rec['source_type'],
+        'sample_id_norm': rec['sample_id_norm'],
+        'initial_candidate_count': initial_count,
+        'after_id_count': after_id_count,
+        'after_source_count': after_source_count,
+        'after_strat_count': after_strat_count,
+        'after_lithology_count': after_lith_count,
+        'final_status': final_status,
+        'final_candidate_count': final_candidate_count,
+        'matched_baseline_id': matched_id,
+        'needs_manual_confirmation': needs_manual,
+        'failure_reason': failure_reason,
+        '_direct_linkable': direct_linkable,
+        '_rule_assisted_verified': rule_assisted_verified,
+        '_baseline_compatible': baseline_compatible,
+    }
+link=pd.DataFrame([process_record2(rec) for df in analysis.values() for _,rec in df.iterrows()])
+link['source_group']=link['record_id'].str.extract(r'^([A-Z]+)')
+link['final_status'].value_counts(), link.groupby('source_type')['final_status'].value_counts().unstack(fill_value=0)

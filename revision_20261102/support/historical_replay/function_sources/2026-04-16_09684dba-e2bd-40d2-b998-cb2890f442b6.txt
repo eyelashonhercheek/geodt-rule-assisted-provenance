@@ -1,0 +1,29 @@
+def parse_grain_page(page):
+    blocks=sorted(page.get_text("blocks"), key=lambda x:(round(x[1],1), x[0]))
+    texts=[b[4].replace('\xa0',' ').strip() for b in blocks[:8] if b[4].strip()]
+    top="\n".join(texts)
+    outcrop=np.nan
+    for t in texts:
+        if '检测日期' in t:
+            prefix=t.split('检测日期')[0]
+            prefix=prefix.replace('井号(剖面):','').replace('露头编号:','').strip()
+            prefix=prefix.strip(' :：\n')
+            if prefix:
+                outcrop=clean_text(prefix)
+                break
+    smp = re.search(r"样\s*号[:：]\s*(?P<sample_id>.*?)\s*岩石定名[:：]?\s*(?P<lith>.*?)(?:\s*井\s*段|\s*层位[:：]|$)", top, re.S)
+    sample_id = clean_text(smp.group('sample_id')) if smp else np.nan
+    lith = clean_text(smp.group('lith')) if smp else np.nan
+    strat=np.nan
+    for t in texts:
+        m2 = re.search(r"层位[:：]\s*([^\n]+)", t)
+        if m2:
+            val=clean_text(m2.group(1))
+            if not pd.isna(val):
+                strat=val
+                break
+    return {'outcrop':outcrop,'sample_id':sample_id,'lith':lith,'strat':strat,'top':top}
+
+for p in [6,8,51,100,140,180]:
+    print('page',p+1, parse_grain_page(grain_doc[p]))
+    print('---')

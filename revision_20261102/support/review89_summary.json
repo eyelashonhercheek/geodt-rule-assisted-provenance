@@ -1,0 +1,36 @@
+{
+  "total_tasks": 89,
+  "accepted_census": 52,
+  "accepted_supported_same_target": 52,
+  "accepted_mismatches": 0,
+  "other_state_random": 30,
+  "other_state_positive": 12,
+  "other_state_unknown": 18,
+  "diagnostic_extra": 7,
+  "diagnostic_positive": 7,
+  "positive_targets": 71,
+  "positive_targets_included": 69,
+  "unresolved": 18,
+  "target_inclusion_percent": 97.1830985915493,
+  "false_accept_denominator": 52,
+  "false_accept_observed": 0,
+  "evidence_classes": {
+    "D": 7,
+    "A": 64,
+    "E": 18
+  },
+  "source_locator_and_baseline_data_unchanged": true,
+  "reviewer_identity_source": "author statements in this chat",
+  "source_workbook_sha256": "87c480cf2bfe28995f3b621ab0853c4537e54ab0df4cb5f4f59f6249344df0b3",
+  "pending_reason_confirmations": [],
+  "original_70_AI_review_not_reused_as_human_validation": true,
+  "full_independent_physical_reference_frozen": false,
+  "system_policy_and_predictions_changed": false,
+  "metrics_scope": "AI-assisted human review of documentary provenance; census of current D3 accepted links and separate sampled/diagnostic arms; not physical sample identity accuracy",
+  "confirmed_reason_clarifications": [
+    "EX005",
+    "EX033",
+    "EX056"
+  ],
+  "clarification_confirmation_source": "author report dated 2026-10-29; no electronic signature created"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "file": "support/reproducibility/inputs_D2.json",
+    "registered_source_sha256": "6aea210a76ecb30cf4e5039549f26e2fc5d80fca155bdc9ce3d19d029549df4d",
+    "public_file_sha256": "62bfebad446559710c8cced948484fe6aa94aea22f34a61f529de56aec8b0864",
+    "portable_metadata_paths": 26,
+    "baseline_rows_unchanged": true,
+    "analytical_rows_unchanged": true,
+    "policy_metadata_unchanged": true
+  },
+  {
+    "file": "support/reproducibility/inputs_D3.json",
+    "registered_source_sha256": "71bc66ed17ecf8017fef36cb197e6af864a3254aaf51da9580ad1b2eca0cb799",
+    "public_file_sha256": "82c9d62b874345e69f9612824d61c4d46bd5f118adbc484045c0a47acfb2b63e",
+    "portable_metadata_paths": 26,
+    "baseline_rows_unchanged": true,
+    "analytical_rows_unchanged": true,
+    "policy_metadata_unchanged": true
+  }
+]
