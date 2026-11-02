@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite the archived release DOI."
 title: "Reproducibility package for an auditable cross-scale provenance recovery framework for fragmented geological records"
 version: 1.1.0
+doi: "10.5281/zenodo.23878103"
 date-released: 2026-11-02
 repository-code: "https://github.com/eyelashonhercheek/geodt-rule-assisted-provenance"
 license: MIT

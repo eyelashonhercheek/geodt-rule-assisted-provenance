@@ -1,5 +1,7 @@
 # Auditable Cross-Scale Provenance Recovery
 
+[![DOI v1.1.0](https://zenodo.org/badge/DOI/10.5281/zenodo.23878103.svg)](https://doi.org/10.5281/zenodo.23878103)
+
 ## Major revision evaluation: package v1.1.0, 2 November 2026
 
 The revised evaluation is in [`revision_20261102/`](revision_20261102/).
@@ -48,9 +50,10 @@ recorded provenance; the revised human validation uses the completed 89-case rev
 
 ### Archived historical version
 
-The DOI below identifies the historical v1.0.2 archive. The revised files must be
-archived as a new Zenodo version before that new version DOI is used in a citation.
-The existing DOI remains available for reproduction of the earlier release.
+Version **v1.1.0** is archived at https://doi.org/10.5281/zenodo.23878103 .
+The complete version series uses concept DOI https://doi.org/10.5281/zenodo.20279191 .
+The DOI below identifies the historical v1.0.2 archive and remains available
+for reproduction of the earlier release.
 
 ## Historical demonstration and tabular release
 
